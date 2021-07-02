@@ -1,1 +1,1 @@
-<?php
+<?php include "connection.php"; ?>
