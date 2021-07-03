@@ -1,4 +1,7 @@
 <?php include "../connection.php"; ?>
+<?php session_start();
+$cad_id = $_SESSION['cad_regist_id'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,7 +71,7 @@
                                             <div class="col-xl-12 col-lg-12 col-md-12" style="padding-left: 4%;padding-right: 4%;"><br>
                                             <form class="form-group">
                                                 <div class="form-group">
-                                                    <input type="hidden" name="cad_regist_id" class="form-control">
+                                                    <input type="text" name="cad_reg_id" class="form-control" value="<?php echo $cad_id; ?>">
                                                 </div>
                                                 <div class="form-group">
                                                     <label >Photo Identity Card / फोटो पहचान पत्र <span style="color: red">*</span></label>
@@ -142,5 +145,5 @@
             </div>
         </div>
     </div></div>
-
+<?php session_destroy(); ?>
 <?php include "../footer.php"; ?>
