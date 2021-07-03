@@ -145,9 +145,9 @@
                                         <td align=center>National Defence Academy  Examination <br/>राष्ट्रीय रक्षा अकादमी परीक्षा</td>
                                         <td>2021</td><td>&nbsp;10/2021-NDA-II</td><td><font color='green'><strong>09-06-2021</strong></font></td>
                                         <td><strong><font color='red'>29-06-2021<br/></font></strong></td>
-                                        <td><a href=""><button type="submit" class="btn btn-info">Click Here for PART I <br/>
+                                        <td><a href="Candidate/Form/form1.php"><button type="button" class="btn btn-info">Click Here for PART I <br/>
                                                     भाग- I के लिए यहां क्लिक करें</button></a></td>
-                                        <td><a href="#" ><button type="button" class="btn btn-success"> Click Here for Part II <br/>
+                                        <td><a href="" ><button type="button" class="btn btn-success"> Click Here for Part II <br/>
                                                     भाग- II के लिए यहां क्लिक करें </button></a></td>
                                     </tr>
                                     <tr align=center style='height:60px;'><td>NDAII</td>
