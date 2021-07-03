@@ -31,8 +31,8 @@
                 var f = alpha[Math.floor(Math.random() * alpha.length)];
                 var g = alpha[Math.floor(Math.random() * alpha.length)];
             }
-           var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
-           // var code = a  + b + c  + d +  e +  f  + g;
+           //var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
+            var code = a  + b + c  + d +  e +  f  + g;
             document.getElementById("mainCaptcha").value = code
         }
 
@@ -94,8 +94,8 @@
                                     <div class="form-group text-center">
                                         <label>Captcha <spans style="color: red">*</spans></label><br>
                                         <div class="custom-control d-inline-flex">
-                                            <input type="text" class="form-control" name="cap" style="font-size: 19px;font-weight: bold;font-family: Times New Roman;width: 150px;" id="mainCaptcha" disabled readonly>&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <input type="text" id="txtInput" name="txtInput" class="form-control" style="width: 150px;" maxlength="7" >
+                                            <input type="text" class="form-control" name="capt" style="font-size: 19px;font-weight: bold;font-family: Times New Roman;width: 150px;" id="mainCaptcha" disabled readonly>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="text" id="txtInput" name="txtInput" class="form-control" style="width: 150px;" maxlength="" >
                                             <i onclick="Captcha();" class="fas fa-redo" style="padding: 15px;color: #2e6da4;"></i>
                                         </div>
                                     </div><br><br>
@@ -113,8 +113,7 @@
         </div>
     </div></div>
 <?php
-if(isset($_POST["submit"]))
-{
+if(isset($_POST["submit"])){
     $count=0;
     $res= mysqli_query($conn,"select * from candidate_t where cad_regist_id='$_POST[cad_id]' && birth_date='$_POST[date]'");
     $count=mysqli_num_rows($res);
@@ -135,7 +134,7 @@ if(isset($_POST["submit"]))
             window.location.href="form2.php";
         </script>
         <?php
-    }
+        }
 }
 ?>
 
