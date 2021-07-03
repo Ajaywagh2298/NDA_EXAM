@@ -1,4 +1,7 @@
 <?php include "../connection.php"; ?>
+<?php session_start();
+$cad_id = $_SESSION['cad_regist_id'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,7 +69,10 @@
 
                                             </div><br>
                                             <div class="col-xl-12 col-lg-12 col-md-12" style="padding-left: 4%;padding-right: 4%;"><br>
-                                                <form class="form-group">
+                                                <form class="form-group" action="" method="post">
+                                                    <div class="form-group">
+                                                        <input type="text" name="cad_re_id" class="form-control" value="<?php echo $cad_id ?>">
+                                                    </div>
                                                     <div class="form-group">
                                                         <label >Exam Center Selection I / परीक्षा केंद्र चयन I <span style="color: red">*</span></label>
                                                         <select name="" id="" class="form-control">
