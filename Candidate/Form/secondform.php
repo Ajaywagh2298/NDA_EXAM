@@ -69,7 +69,7 @@ $cad_id = $_SESSION['cad_regist_id'];
 
                                             </div><br>
                                             <div class="col-xl-12 col-lg-12 col-md-12" style="padding-left: 4%;padding-right: 4%;"><br>
-                                            <form class="form-group">
+                                            <form class="form-group" action="addsecform.php" method="post" enctype="multipart/form-data">
                                                 <div class="form-group">
                                                     <input type="text" name="cad_reg_id" class="form-control" value="<?php echo $cad_id; ?>">
                                                 </div>
@@ -99,7 +99,7 @@ $cad_id = $_SESSION['cad_regist_id'];
                                                 <div class="form-group">
                                                     <label >Photo Identity  /  फोटो पहचान <span style="color: red"> *</span> </label>
                                                     <div class="custom-file">
-                                                        <input type="file" class="custom-file-input"  style="width:200px;" name="photoid"
+                                                        <input type="file" class="custom-file-input"  style="width:200px;" name="photo"
                                                                id="exampleInputFile" accept="image/jpeg" required>
                                                         <label class="custom-file-label" for="exampleInputFile">Choose
                                                             file</label>
@@ -108,7 +108,7 @@ $cad_id = $_SESSION['cad_regist_id'];
                                                 <div class="form-group">
                                                     <label >signature / हस्ताक्षरं <span style="color: red"> *</span> </label>
                                                     <div class="custom-file">
-                                                        <input type="file" class="custom-file-input" style="width:250px;" name="photoid"
+                                                        <input type="file" class="custom-file-input" style="width:250px;" name="sign"
                                                                id="exampleInputFile" accept="image/jpeg" required>
                                                         <label class="custom-file-label" for="exampleInputFile">Choose
                                                             file</label>
@@ -117,19 +117,19 @@ $cad_id = $_SESSION['cad_regist_id'];
                                                 </div><br><br>
                                                 <div class="form-group">
                                                     <label >Whether Student of Sainik/Military School / क्या आप सैनिक / मिलिटरी स्कूल के विद्यार्थी हैं<span style="color: red"> *</span> </label>
-                                                    <select name="" id="ndasonjco" class="form-control"><option value="2">No / नहीं</option><option value="1">Yes / हां   </option></select>
+                                                    <select name="military_school_student" id="ndasonjco" class="form-control"><option value="no">No / नहीं</option><option value="yes">Yes / हां   </option></select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Whether Son of JCO / NCO / Other Rank officers and studying in Sainik / Military School / क्या आप जेसीओ / एनसीओ / अन्य‍ रैंक के अधिकारियों के पुत्र हैं और सैनिक/मिलिटरी स्कूल के विद्यार्थी हैं <span style="color: red">*</span> </label>
-                                                    <select name="" id="ndasonjco" class="form-control"><option value="2">No / नहीं</option><option value="1">Yes / हां   </option></select>
+                                                    <select name="son_military_staff" id="ndasonjco" class="form-control"><option value="no">No / नहीं</option><option value="yes">Yes / हां   </option></select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label >Whether a student is National Cadet Corps (NCC) candidate  / क्या कोई छात्र राष्ट्रीय कैडेट कोर (एनसीसी) का उम्मीदवार हैा <span style="color: red">*</span> </label>
-                                                    <select name="" id="ndasonjco" class="form-control"><option value="2">No / नहीं</option><option value="1">Yes / हां   </option></select>
+                                                    <select name="ncc_cad" id="ndasonjco" class="form-control"><option value="no">No / नहीं</option><option value="yes">Yes / हां   </option></select>
                                                 </div>
                                                 <br>
                                                 <div class="text-center">
-                                                    <a href="" class="btn btn-primary" style="width: 30%;">Continue / आगे बढ़ें</a>
+                                                    <button type="submit" name="submit" class="btn btn-primary" style="width: 30%;">Continue / आगे बढ़ें</button>
                                                 </div>
                                             </form><br>
                                             </div>
