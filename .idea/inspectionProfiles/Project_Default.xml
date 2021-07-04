@@ -5,6 +5,11 @@
     <inspection_tool class="CssConvertColorToHexInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="CssConvertColorToRgbInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="CssMissingSemicolon" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="55" name="PHP" />
+      </Languages>
+    </inspection_tool>
     <inspection_tool class="HtmlNonExistentInternetResource" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="HtmlPresentationalElement" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="HtmlRequiredSummaryAttribute" enabled="true" level="INFORMATION" enabled_by_default="true" />
@@ -58,6 +63,7 @@
     <inspection_tool class="ProblematicWhitespace" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PsalmGlobal" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="RegExpAnonymousGroup" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="SqlResolveInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="TodoComment" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="UnresolvedReference" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="UnusedDefine" enabled="true" level="WARNING" enabled_by_default="true" />
