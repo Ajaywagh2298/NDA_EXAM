@@ -75,235 +75,235 @@ $cad_id = $_SESSION['cad_regist_id'];
                                                     </div>
                                                     <div class="form-group">
                                                         <label >Exam Center Selection I / परीक्षा केंद्र चयन I <span style="color: red">*</span></label>
-                                                        <select name="" id="" class="form-control">
+                                                        <select name="center1" id="" class="form-control">
                                                             <option value="0" class="selInstruct"> Select</option>
-                                                            <option>Agartala</option>
-                                                            <option>Bilaspur</option>
-                                                            <option>Agra</option>
-                                                            <option> Chandigarh</option>
-                                                            <option> Ahmedabad</option>
-                                                            <option> Chennai</option>
-                                                            <option>Aizwal</option>
-                                                            <option>Coimbatore</option>
-                                                            <option>Aligarh</option>
-                                                            <option> Cuttack</option>
-                                                            <option> Almora</option>
-                                                            <option> Delhi</option>
-                                                            <option> Ananthapur</option>
-                                                            <option>Dharwad</option>
-                                                            <option> Aurangabad</option>
-                                                            <option> Dispur</option>
-                                                            <option> Bareilly</option>
-                                                            <option>Faridabad</option>
-                                                            <option> Bengaluru</option>
-                                                            <option>Gangtok</option>
-                                                            <option> Jorhat</option>
-                                                            <option> Garwhal (Srinagar)</option>
-                                                            <option> Bhopal</option>
-                                                            <option> Gautam Budh Nagar</option>
-                                                            <option>Ghaziabad</option>
-                                                            <option>Gurgaon</option>
-                                                            <option>Gorakhpur</option>
-                                                            <option>Gwalior</option>
-                                                            <option>Hyderabad</option>
-                                                            <option>Imphal</option>
-                                                            <option>Indore</option>
-                                                            <option>Itanagar</option>
-                                                            <option>Jabalpur</option>
-                                                            <option> Jaipur</option>
-                                                            <option>Jammu</option>
-                                                            <option>Jodhpur</option>
-                                                            <option> Kochi</option>
-                                                            <option>Kohima</option>
-                                                            <option> Kolkata</option>
-                                                            <option>Kozhikode</option>
-                                                            <option>Leh</option>
-                                                            <option>Lucknow</option>
-                                                            <option>Ludhiana</option>
-                                                            <option>Madhurai</option>
-                                                            <option>Mysuru</option>
-                                                            <option>Mumbai</option>
-                                                            <option>Nagpur</option>
-                                                            <option>Sambalpur</option>
-                                                            <option>Navi Mumbai</option>
-                                                            <option>Shillong</option>
-                                                            <option>Panaji (Goa)</option>
-                                                            <option>Shimla</option>
-                                                            <option>Patna</option>
-                                                            <option>Port Blair</option>
-                                                            <option>Srinagar</option>
-                                                            <option>Prayagraj (Allahabad)</option>
-                                                            <option>Thane</option>
-                                                            <option>Puducherry</option>
-                                                            <option>Thiruvananthapuram</option>
-                                                            <option>Pune</option>
-                                                            <option>Tiruchirapalli</option>
-                                                            <option>Raipur</option>
-                                                            <option>Tirupati</option>
-                                                            <option>Rajkot</option>
-                                                            <option>Udaipur</option>
-                                                            <option>Ranchi</option>
-                                                            <option>Varanasi</option>
-                                                            <option>Vellore</option>
-                                                            <option>Vijayawada</option>
-                                                            <option>Vishakhapatnam</option>
-                                                            <option>Warangal</option>
+                                                            <option value="agartala">Agartala</option>
+                                                            <option value="bilaspur">Bilaspur</option>
+                                                            <option value="agra">Agra</option>
+                                                            <option value="chandigarh"> Chandigarh</option>
+                                                            <option value="ahmedabad"> Ahmedabad</option>
+                                                            <option value="chennai"> Chennai</option>
+                                                            <option value="aizwal">Aizwal</option>
+                                                            <option value="coimbatore">Coimbatore</option>
+                                                            <option value="aligarh">Aligarh</option>
+                                                            <option value="cuttack"> Cuttack</option>
+                                                            <option value="almora"> Almora</option>
+                                                            <option value="delhi"> Delhi</option>
+                                                            <option value="ananthapur"> Ananthapur</option>
+                                                            <option value="agartala">Dharwad</option>
+                                                            <option value="aurangabad"> Aurangabad</option>
+                                                            <option value="dispur"> Dispur</option>
+                                                            <option value="bareilly"> Bareilly</option>
+                                                            <option value="faridabad">Faridabad</option>
+                                                            <option value="bengaluru"> Bengaluru</option>
+                                                            <option value="gangtok">Gangtok</option>
+                                                            <option value="jorhat"> Jorhat</option>
+                                                            <option value="garwhal"> Garwhal (Srinagar)</option>
+                                                            <option value="bhopal"> Bhopal</option>
+                                                            <option value="gautam budh nagar"> Gautam Budh Nagar</option>
+                                                            <option value="ghaziabad">Ghaziabad</option>
+                                                            <option value="gurgaon">Gurgaon</option>
+                                                            <option value="gorakhpur">Gorakhpur</option>
+                                                            <option value="gwalior">Gwalior</option>
+                                                            <option value="hyderabad">Hyderabad</option>
+                                                            <option value="imphal">Imphal</option>
+                                                            <option value="indore">Indore</option>
+                                                            <option value="itanagar">Itanagar</option>
+                                                            <option value="jabalpur">Jabalpur</option>
+                                                            <option value="jaipur"> Jaipur</option>
+                                                            <option value="jammu">Jammu</option>
+                                                            <option value="jodhpur">Jodhpur</option>
+                                                            <option value="kochi"> Kochi</option>
+                                                            <option value="kohima">Kohima</option>
+                                                            <option value="kolkata"> Kolkata</option>
+                                                            <option value="kozhikode">Kozhikode</option>
+                                                            <option value="leh">Leh</option>
+                                                            <option value="lucknow">Lucknow</option>
+                                                            <option value="ludhiana">Ludhiana</option>
+                                                            <option value="madhurai">Madhurai</option>
+                                                            <option value="mysuru">Mysuru</option>
+                                                            <option value="mumbai">Mumbai</option>
+                                                            <option value="nagpur">Nagpur</option>
+                                                            <option value="sambalpur">Sambalpur</option>
+                                                            <option value="navi mumbai">Navi Mumbai</option>
+                                                            <option value="shillong">Shillong</option>
+                                                            <option value="panaji">Panaji (Goa)</option>
+                                                            <option value="shimla">Shimla</option>
+                                                            <option value="patna">Patna</option>
+                                                            <option value="port blair">Port Blair</option>
+                                                            <option value="srinagar">Srinagar</option>
+                                                            <option value="prayagraj">Prayagraj (Allahabad)</option>
+                                                            <option value="thane">Thane</option>
+                                                            <option value="puducherry">Puducherry</option>
+                                                            <option value="thiruvananthapuram">Thiruvananthapuram</option>
+                                                            <option value="pune">Pune</option>
+                                                            <option value="tiruchirapalli">Tiruchirapalli</option>
+                                                            <option value="raipur">Raipur</option>
+                                                            <option value="tirupati">Tirupati</option>
+                                                            <option value="rajkot">Rajkot</option>
+                                                            <option value="udaipur">Udaipur</option>
+                                                            <option value="ranchi">Ranchi</option>
+                                                            <option value="varanasi">Varanasi</option>
+                                                            <option value="vellore">Vellore</option>
+                                                            <option value="agartala">Vijayawada</option>
+                                                            <option value="vishakhapatnam">Vishakhapatnam</option>
+                                                            <option value="warangal">Warangal</option>
                                                         </select>
                                                     </div>
                                                     <br>
                                                     <div class="form-group">
                                                         <label >Exam Center Selection II / परीक्षा केंद्र चयन II <span style="color: red">*</span></label>
-                                                        <select name="" id="" class="form-control">
+                                                        <select name="center2" id="" class="form-control">
                                                             <option value="0" class="selInstruct"> Select</option>
-                                                            <option>Agartala</option>
-                                                            <option>Bilaspur</option>
-                                                            <option>Agra</option>
-                                                            <option> Chandigarh</option>
-                                                            <option> Ahmedabad</option>
-                                                            <option> Chennai</option>
-                                                            <option>Aizwal</option>
-                                                            <option>Coimbatore</option>
-                                                            <option>Aligarh</option>
-                                                            <option> Cuttack</option>
-                                                            <option> Almora</option>
-                                                            <option> Delhi</option>
-                                                            <option> Ananthapur</option>
-                                                            <option>Dharwad</option>
-                                                            <option> Aurangabad</option>
-                                                            <option> Dispur</option>
-                                                            <option> Bareilly</option>
-                                                            <option>Faridabad</option>
-                                                            <option> Bengaluru</option>
-                                                            <option>Gangtok</option>
-                                                            <option> Jorhat</option>
-                                                            <option> Garwhal (Srinagar)</option>
-                                                            <option> Bhopal</option>
-                                                            <option> Gautam Budh Nagar</option>
-                                                            <option>Ghaziabad</option>
-                                                            <option>Gurgaon</option>
-                                                            <option>Gorakhpur</option>
-                                                            <option>Gwalior</option>
-                                                            <option>Hyderabad</option>
-                                                            <option>Imphal</option>
-                                                            <option>Indore</option>
-                                                            <option>Itanagar</option>
-                                                            <option>Jabalpur</option>
-                                                            <option> Jaipur</option>
-                                                            <option>Jammu</option>
-                                                            <option>Jodhpur</option>
-                                                            <option> Kochi</option>
-                                                            <option>Kohima</option>
-                                                            <option> Kolkata</option>
-                                                            <option>Kozhikode</option>
-                                                            <option>Leh</option>
-                                                            <option>Lucknow</option>
-                                                            <option>Ludhiana</option>
-                                                            <option>Madhurai</option>
-                                                            <option>Mysuru</option>
-                                                            <option>Mumbai</option>
-                                                            <option>Nagpur</option>
-                                                            <option>Sambalpur</option>
-                                                            <option>Navi Mumbai</option>
-                                                            <option>Shillong</option>
-                                                            <option>Panaji (Goa)</option>
-                                                            <option>Shimla</option>
-                                                            <option>Patna</option>
-                                                            <option>Port Blair</option>
-                                                            <option>Srinagar</option>
-                                                            <option>Prayagraj (Allahabad)</option>
-                                                            <option>Thane</option>
-                                                            <option>Puducherry</option>
-                                                            <option>Thiruvananthapuram</option>
-                                                            <option>Pune</option>
-                                                            <option>Tiruchirapalli</option>
-                                                            <option>Raipur</option>
-                                                            <option>Tirupati</option>
-                                                            <option>Rajkot</option>
-                                                            <option>Udaipur</option>
-                                                            <option>Ranchi</option>
-                                                            <option>Varanasi</option>
-                                                            <option>Vellore</option>
-                                                            <option>Vijayawada</option>
-                                                            <option>Vishakhapatnam</option>
-                                                            <option>Warangal</option>
+                                                            <option value="agartala">Agartala</option>
+                                                            <option value="bilaspur">Bilaspur</option>
+                                                            <option value="agra">Agra</option>
+                                                            <option value="chandigarh"> Chandigarh</option>
+                                                            <option value="ahmedabad"> Ahmedabad</option>
+                                                            <option value="chennai"> Chennai</option>
+                                                            <option value="aizwal">Aizwal</option>
+                                                            <option value="coimbatore">Coimbatore</option>
+                                                            <option value="aligarh">Aligarh</option>
+                                                            <option value="cuttack"> Cuttack</option>
+                                                            <option value="almora"> Almora</option>
+                                                            <option value="delhi"> Delhi</option>
+                                                            <option value="ananthapur"> Ananthapur</option>
+                                                            <option value="agartala">Dharwad</option>
+                                                            <option value="aurangabad"> Aurangabad</option>
+                                                            <option value="dispur"> Dispur</option>
+                                                            <option value="bareilly"> Bareilly</option>
+                                                            <option value="faridabad">Faridabad</option>
+                                                            <option value="bengaluru"> Bengaluru</option>
+                                                            <option value="gangtok">Gangtok</option>
+                                                            <option value="jorhat"> Jorhat</option>
+                                                            <option value="garwhal"> Garwhal (Srinagar)</option>
+                                                            <option value="bhopal"> Bhopal</option>
+                                                            <option value="gautam budh nagar"> Gautam Budh Nagar</option>
+                                                            <option value="ghaziabad">Ghaziabad</option>
+                                                            <option value="gurgaon">Gurgaon</option>
+                                                            <option value="gorakhpur">Gorakhpur</option>
+                                                            <option value="gwalior">Gwalior</option>
+                                                            <option value="hyderabad">Hyderabad</option>
+                                                            <option value="imphal">Imphal</option>
+                                                            <option value="indore">Indore</option>
+                                                            <option value="itanagar">Itanagar</option>
+                                                            <option value="jabalpur">Jabalpur</option>
+                                                            <option value="jaipur"> Jaipur</option>
+                                                            <option value="jammu">Jammu</option>
+                                                            <option value="jodhpur">Jodhpur</option>
+                                                            <option value="kochi"> Kochi</option>
+                                                            <option value="kohima">Kohima</option>
+                                                            <option value="kolkata"> Kolkata</option>
+                                                            <option value="kozhikode">Kozhikode</option>
+                                                            <option value="leh">Leh</option>
+                                                            <option value="lucknow">Lucknow</option>
+                                                            <option value="ludhiana">Ludhiana</option>
+                                                            <option value="madhurai">Madhurai</option>
+                                                            <option value="mysuru">Mysuru</option>
+                                                            <option value="mumbai">Mumbai</option>
+                                                            <option value="nagpur">Nagpur</option>
+                                                            <option value="sambalpur">Sambalpur</option>
+                                                            <option value="navi mumbai">Navi Mumbai</option>
+                                                            <option value="shillong">Shillong</option>
+                                                            <option value="panaji">Panaji (Goa)</option>
+                                                            <option value="shimla">Shimla</option>
+                                                            <option value="patna">Patna</option>
+                                                            <option value="port blair">Port Blair</option>
+                                                            <option value="srinagar">Srinagar</option>
+                                                            <option value="prayagraj">Prayagraj (Allahabad)</option>
+                                                            <option value="thane">Thane</option>
+                                                            <option value="puducherry">Puducherry</option>
+                                                            <option value="thiruvananthapuram">Thiruvananthapuram</option>
+                                                            <option value="pune">Pune</option>
+                                                            <option value="tiruchirapalli">Tiruchirapalli</option>
+                                                            <option value="raipur">Raipur</option>
+                                                            <option value="tirupati">Tirupati</option>
+                                                            <option value="rajkot">Rajkot</option>
+                                                            <option value="udaipur">Udaipur</option>
+                                                            <option value="ranchi">Ranchi</option>
+                                                            <option value="varanasi">Varanasi</option>
+                                                            <option value="vellore">Vellore</option>
+                                                            <option value="agartala">Vijayawada</option>
+                                                            <option value="vishakhapatnam">Vishakhapatnam</option>
+                                                            <option value="warangal">Warangal</option>
                                                         </select>
                                                     </div>
                                                     <br>
                                                     <div class="form-group">
                                                         <label >Exam Center Selection III / परीक्षा केंद्र चयन III <span style="color: red">*</span></label>
-                                                        <select name="" id="" class="form-control">
+                                                        <select name="center3" id="" class="form-control">
                                                             <option value="0" class="selInstruct"> Select</option>
-                                                            <option>Agartala</option>
-                                                            <option>Bilaspur</option>
-                                                            <option>Agra</option>
-                                                            <option> Chandigarh</option>
-                                                            <option> Ahmedabad</option>
-                                                            <option> Chennai</option>
-                                                            <option>Aizwal</option>
-                                                            <option>Coimbatore</option>
-                                                            <option>Aligarh</option>
-                                                            <option> Cuttack</option>
-                                                            <option> Almora</option>
-                                                            <option> Delhi</option>
-                                                            <option> Ananthapur</option>
-                                                            <option>Dharwad</option>
-                                                            <option> Aurangabad</option>
-                                                            <option> Dispur</option>
-                                                            <option> Bareilly</option>
-                                                            <option>Faridabad</option>
-                                                            <option> Bengaluru</option>
-                                                            <option>Gangtok</option>
-                                                            <option> Jorhat</option>
-                                                            <option> Garwhal (Srinagar)</option>
-                                                            <option> Bhopal</option>
-                                                            <option> Gautam Budh Nagar</option>
-                                                            <option>Ghaziabad</option>
-                                                            <option>Gurgaon</option>
-                                                            <option>Gorakhpur</option>
-                                                            <option>Gwalior</option>
-                                                            <option>Hyderabad</option>
-                                                            <option>Imphal</option>
-                                                            <option>Indore</option>
-                                                            <option>Itanagar</option>
-                                                            <option>Jabalpur</option>
-                                                            <option> Jaipur</option>
-                                                            <option>Jammu</option>
-                                                            <option>Jodhpur</option>
-                                                            <option> Kochi</option>
-                                                            <option>Kohima</option>
-                                                            <option> Kolkata</option>
-                                                            <option>Kozhikode</option>
-                                                            <option>Leh</option>
-                                                            <option>Lucknow</option>
-                                                            <option>Ludhiana</option>
-                                                            <option>Madhurai</option>
-                                                            <option>Mysuru</option>
-                                                            <option>Mumbai</option>
-                                                            <option>Nagpur</option>
-                                                            <option>Sambalpur</option>
-                                                            <option>Navi Mumbai</option>
-                                                            <option>Shillong</option>
-                                                            <option>Panaji (Goa)</option>
-                                                            <option>Shimla</option>
-                                                            <option>Patna</option>
-                                                            <option>Port Blair</option>
-                                                            <option>Srinagar</option>
-                                                            <option>Prayagraj (Allahabad)</option>
-                                                            <option>Thane</option>
-                                                            <option>Puducherry</option>
-                                                            <option>Thiruvananthapuram</option>
-                                                            <option>Pune</option>
-                                                            <option>Tiruchirapalli</option>
-                                                            <option>Raipur</option>
-                                                            <option>Tirupati</option>
-                                                            <option>Rajkot</option>
-                                                            <option>Udaipur</option>
-                                                            <option>Ranchi</option>
-                                                            <option>Varanasi</option>
-                                                            <option>Vellore</option>
-                                                            <option>Vijayawada</option>
-                                                            <option>Vishakhapatnam</option>
-                                                            <option>Warangal</option>
+                                                            <option value="agartala">Agartala</option>
+                                                            <option value="bilaspur">Bilaspur</option>
+                                                            <option value="agra">Agra</option>
+                                                            <option value="chandigarh"> Chandigarh</option>
+                                                            <option value="ahmedabad"> Ahmedabad</option>
+                                                            <option value="chennai"> Chennai</option>
+                                                            <option value="aizwal">Aizwal</option>
+                                                            <option value="coimbatore">Coimbatore</option>
+                                                            <option value="aligarh">Aligarh</option>
+                                                            <option value="cuttack"> Cuttack</option>
+                                                            <option value="almora"> Almora</option>
+                                                            <option value="delhi"> Delhi</option>
+                                                            <option value="ananthapur"> Ananthapur</option>
+                                                            <option value="agartala">Dharwad</option>
+                                                            <option value="aurangabad"> Aurangabad</option>
+                                                            <option value="dispur"> Dispur</option>
+                                                            <option value="bareilly"> Bareilly</option>
+                                                            <option value="faridabad">Faridabad</option>
+                                                            <option value="bengaluru"> Bengaluru</option>
+                                                            <option value="gangtok">Gangtok</option>
+                                                            <option value="jorhat"> Jorhat</option>
+                                                            <option value="garwhal"> Garwhal (Srinagar)</option>
+                                                            <option value="bhopal"> Bhopal</option>
+                                                            <option value="gautam budh nagar"> Gautam Budh Nagar</option>
+                                                            <option value="ghaziabad">Ghaziabad</option>
+                                                            <option value="gurgaon">Gurgaon</option>
+                                                            <option value="gorakhpur">Gorakhpur</option>
+                                                            <option value="gwalior">Gwalior</option>
+                                                            <option value="hyderabad">Hyderabad</option>
+                                                            <option value="imphal">Imphal</option>
+                                                            <option value="indore">Indore</option>
+                                                            <option value="itanagar">Itanagar</option>
+                                                            <option value="jabalpur">Jabalpur</option>
+                                                            <option value="jaipur"> Jaipur</option>
+                                                            <option value="jammu">Jammu</option>
+                                                            <option value="jodhpur">Jodhpur</option>
+                                                            <option value="kochi"> Kochi</option>
+                                                            <option value="kohima">Kohima</option>
+                                                            <option value="kolkata"> Kolkata</option>
+                                                            <option value="kozhikode">Kozhikode</option>
+                                                            <option value="leh">Leh</option>
+                                                            <option value="lucknow">Lucknow</option>
+                                                            <option value="ludhiana">Ludhiana</option>
+                                                            <option value="madhurai">Madhurai</option>
+                                                            <option value="mysuru">Mysuru</option>
+                                                            <option value="mumbai">Mumbai</option>
+                                                            <option value="nagpur">Nagpur</option>
+                                                            <option value="sambalpur">Sambalpur</option>
+                                                            <option value="navi mumbai">Navi Mumbai</option>
+                                                            <option value="shillong">Shillong</option>
+                                                            <option value="panaji">Panaji (Goa)</option>
+                                                            <option value="shimla">Shimla</option>
+                                                            <option value="patna">Patna</option>
+                                                            <option value="port blair">Port Blair</option>
+                                                            <option value="srinagar">Srinagar</option>
+                                                            <option value="prayagraj">Prayagraj (Allahabad)</option>
+                                                            <option value="thane">Thane</option>
+                                                            <option value="puducherry">Puducherry</option>
+                                                            <option value="thiruvananthapuram">Thiruvananthapuram</option>
+                                                            <option value="pune">Pune</option>
+                                                            <option value="tiruchirapalli">Tiruchirapalli</option>
+                                                            <option value="raipur">Raipur</option>
+                                                            <option value="tirupati">Tirupati</option>
+                                                            <option value="rajkot">Rajkot</option>
+                                                            <option value="udaipur">Udaipur</option>
+                                                            <option value="ranchi">Ranchi</option>
+                                                            <option value="varanasi">Varanasi</option>
+                                                            <option value="vellore">Vellore</option>
+                                                            <option value="agartala">Vijayawada</option>
+                                                            <option value="vishakhapatnam">Vishakhapatnam</option>
+                                                            <option value="warangal">Warangal</option>
                                                         </select>
                                                     </div>
                                                     <br>
