@@ -69,9 +69,9 @@ $cad_id = $_SESSION['cad_regist_id'];
 
                                             </div><br>
                                             <div class="col-xl-12 col-lg-12 col-md-12" style="padding-left: 4%;padding-right: 4%;"><br>
-                                                <form class="form-group" action="" method="post">
+                                                <form class="form-group" action="addform2.php" method="post">
                                                     <div class="form-group">
-                                                        <input type="text" name="cad_re_id" class="form-control" value="<?php echo $cad_id ?>">
+                                                        <input type="hidden" name="cad_re_id" class="form-control" value="<?php echo $cad_id ?>">
                                                     </div>
                                                     <div class="form-group">
                                                         <label >Exam Center Selection I / परीक्षा केंद्र चयन I <span style="color: red">*</span></label>
@@ -308,7 +308,7 @@ $cad_id = $_SESSION['cad_regist_id'];
                                                     </div>
                                                     <br>
                                                     <div class="text-center">
-                                                        <a href="" class="btn btn-primary" style="width: 30%;">Continue / आगे बढ़ें</a>
+                                                        <button name="submit" type="button" class="btn btn-primary" style="width: 30%;">Continue / आगे बढ़ें</button>
                                                     </div>
                                                 </form><br>
                                             </div>

@@ -71,10 +71,10 @@
                                                         <div class="d-inline-flex">
                                                         <div class="form-group col-5">
                                                             <label style="font-size: 14px;">10<sup>th</sup> Marksheet Number / 10वीं की मार्कशीट नंबर</label>
-                                                                 <input type="text" class="form-control" style="width: 300px;"></div>
+                                                                 <input type="text" name="10_mark_num" class="form-control" style="width: 300px;"></div>
                                                         <div class="col-12 d-inline-flex" style="padding-top: 4%;">
                                                             <div class="custom-file pmd-custom-file-filled"   style="width: 400px;">
-                                                                <input type="file"  class="pmd-custom-file-filled"" name="photoid" id="exampleInputFile" accept="application/pdf" required>
+                                                                <input type="file"  class="pmd-custom-file-filled" name="10_mark" id="exampleInputFile" accept="application/pdf" required>
                                                                 <label class="custom-file-label" for="exampleInputFile">Choose file</label>&nbsp;
                                                             </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                             <button type="button" class="btn btn-info" style="width: 15%;height:40px;border-radius: 70px;"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;View</button>
@@ -87,10 +87,10 @@
                                                         <div class="d-inline-flex">
                                                             <div class="form-group col-5">
                                                                 <label style="font-size: 14px;">12<sup>th</sup> Marksheet Number / 12वीं की मार्कशीट नंबर</label>
-                                                                <input type="text" class="form-control" style="width: 300px;"></div>
+                                                                <input type="text" name="12_mark_num" class="form-control" style="width: 300px;"></div>
                                                             <div class="col-12 d-inline-flex" style="padding-top: 4%;">
                                                                 <div class="custom-file pmd-custom-file-filled"   style="width: 400px;">
-                                                                    <input type="file"  class="pmd-custom-file-filled"" name="photoid" id="exampleInputFile" accept="application/pdf" required>
+                                                                    <input type="file"  class="pmd-custom-file-filled" name="12_mark" id="exampleInputFile" accept="application/pdf" required>
                                                                     <label class="custom-file-label" for="exampleInputFile">Choose file</label>&nbsp;
                                                                 </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                 <button type="button" class="btn btn-info" style="width: 15%;height:40px;border-radius: 70px;"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;View</button>
@@ -103,10 +103,10 @@
                                                         <div class="d-inline-flex">
                                                             <div class="form-group col-5">
                                                                 <label>Domicile Number / डोमिसाइल नंबर</label>
-                                                                <input type="text" class="form-control" style="width: 300px;"></div>
-                                                            <div class="col-12 d-inline-flex" style="padding-top: 4%;">
+                                                                <input type="text" name="domicile_num" class="form-control" style="width: 300px;"></div>
+                                                            <div class="col-12 d-inline-flex"  style="padding-top: 4%;">
                                                                 <div class="custom-file pmd-custom-file-filled"   style="width: 400px;">
-                                                                    <input type="file"  class="pmd-custom-file-filled"" name="photoid" id="exampleInputFile" accept="application/pdf" required>
+                                                                    <input type="file"  class="pmd-custom-file-filled" name="domicile_certificate" id="exampleInputFile" accept="application/pdf" required>
                                                                     <label class="custom-file-label" for="exampleInputFile">Choose file</label>&nbsp;
                                                                 </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                 <button type="button" class="btn btn-info" style="width: 15%;height:40px;border-radius: 70px;"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;View</button>
@@ -119,10 +119,10 @@
                                                         <div class="d-inline-flex">
                                                             <div class="form-group col-5">
                                                                 <label>Nationality Certificate No / राष्ट्रीयता प्रमाणपत्र नंबर</label>
-                                                                <input type="text" class="form-control" style="width: 300px;"></div>
+                                                                <input type="text" name="nationality_num" class="form-control" style="width: 300px;"></div>
                                                             <div class="col-12 d-inline-flex" style="padding-top: 4%;">
                                                                 <div class="custom-file pmd-custom-file-filled"   style="width: 400px;">
-                                                                    <input type="file"  class="pmd-custom-file-filled"" name="photoid" id="exampleInputFile" accept="application/pdf" required>
+                                                                    <input type="file"  class="pmd-custom-file-filled" name="nationality_certificate" id="exampleInputFile" accept="application/pdf" required>
                                                                     <label class="custom-file-label" for="exampleInputFile">Choose file</label>&nbsp;
                                                                 </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                 <button type="button" class="btn btn-info" style="width: 15%;height:40px;border-radius: 70px;"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;View</button>
@@ -134,7 +134,7 @@
                                                         <label style="font-size: 24px;">Birth Certificate / जन्म प्रमाणपत्र<span style="color: red"> *</span> </label>
                                                         <div class="col-12 d-inline-flex">
                                                             <div class="custom-file pmd-custom-file-filled" style="width: 758px;">
-                                                                <input type="file"  class="pmd-custom-file-filled"   name="photoid" id="exampleInputFile" accept="application/pdf" required>
+                                                                <input type="file"  class="pmd-custom-file-filled"   name="birth_certificate" id="exampleInputFile" accept="application/pdf" required>
                                                                 <label class="custom-file-label" for="exampleInputFile">Choose file</label>&nbsp;
                                                             </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                             <button type="button" class="btn btn-info" style="width: 13%;height:40px;border-radius: 70px;"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;View</button>
@@ -146,7 +146,7 @@
                                                         <label style="font-size: 24px;">Adhar Card  / आधार कार्ड<span style="color: red"> *</span> </label>
                                                         <div class="col-12 d-inline-flex">
                                                             <div class="custom-file pmd-custom-file-filled" style="width: 760px;">
-                                                                <input type="file"  class="pmd-custom-file-filled"   name="photoid" id="exampleInputFile" accept="application/pdf" required>
+                                                                <input type="file"  class="pmd-custom-file-filled"   name="aadhar_card" id="exampleInputFile" accept="application/pdf" required>
                                                                 <label class="custom-file-label" for="exampleInputFile">Choose file</label>&nbsp;
                                                             </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                             <button type="button" class="btn btn-info" style="width: 13%;height:40px;border-radius: 70px;"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;View</button>
@@ -159,10 +159,10 @@
                                                 <div class="d-inline-flex">
                                                     <div class="form-group col-5">
                                                         <label>PAN Card Number / पैन कार्ड नंबर</label>
-                                                        <input type="text" class="form-control" style="width: 300px;"></div>
+                                                        <input type="text" name="pan_num" class="form-control" style="width: 300px;"></div>
                                                     <div class="col-12 d-inline-flex" style="padding-top: 4%;">
                                                         <div class="custom-file pmd-custom-file-filled"   style="width: 400px;">
-                                                            <input type="file"  class="pmd-custom-file-filled"" name="photoid" id="exampleInputFile" accept="application/pdf" required>
+                                                            <input type="file"  class="pmd-custom-file-filled" name="pan_card" id="exampleInputFile" accept="application/pdf" required>
                                                             <label class="custom-file-label" for="exampleInputFile">Choose file</label>&nbsp;
                                                         </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                         <button type="button" class="btn btn-info" style="width: 15%;height:40px;border-radius: 70px;"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;View</button>
@@ -174,7 +174,7 @@
                                                         <label style="font-size: 24px;">College Bonafide / Letter / कॉलेज बोनाफाइड / पत्र<span style="color: red"> *</span> </label>
                                                         <div class="col-12 d-inline-flex">
                                                             <div class="custom-file pmd-custom-file-filled" style="width: 758px;">
-                                                                <input type="file"  class="pmd-custom-file-filled"   name="photoid" id="exampleInputFile" accept="application/pdf" required>
+                                                                <input type="file"  class="pmd-custom-file-filled"   name="clg_letter" id="exampleInputFile" accept="application/pdf" required>
                                                                 <label class="custom-file-label" for="exampleInputFile">Choose file</label>&nbsp;
                                                             </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                             <button type="button" class="btn btn-info" style="width: 13%;height:40px;border-radius: 70px;"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;View</button>
@@ -186,7 +186,7 @@
                                                         <label style="font-size: 24px;">Risk Certificate / जोखिम प्रमाणपत्र<span style="color: red"> *</span> </label>
                                                         <div class="col-12 d-inline-flex">
                                                             <div class="custom-file pmd-custom-file-filled" style="width: 758px;">
-                                                                <input type="file"  class="pmd-custom-file-filled"   name="photoid" id="exampleInputFile" accept="application/pdf" required>
+                                                                <input type="file"  class="pmd-custom-file-filled"   name="risk_certificate" id="exampleInputFile" accept="application/pdf" required>
                                                                 <label class="custom-file-label" for="exampleInputFile">Choose file</label>&nbsp;
                                                             </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                             <button type="button" class="btn btn-info" style="width: 13%;height:40px;border-radius: 70px;"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;View</button>
@@ -198,7 +198,7 @@
                                                         <label style="font-size: 24px;">Appendix ‘A’ / परिशिष्ट 'अ'<span style="color: red"> *</span> </label>
                                                         <div class="col-12 d-inline-flex">
                                                             <div class="custom-file pmd-custom-file-filled" style="width: 758px;">
-                                                                <input type="file"  class="pmd-custom-file-filled"   name="photoid" id="exampleInputFile" accept="application/pdf" required>
+                                                                <input type="file"  class="pmd-custom-file-filled"   name="app_a" id="exampleInputFile" accept="application/pdf" required>
                                                                 <label class="custom-file-label" for="exampleInputFile">Choose file</label>&nbsp;
                                                             </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                             <button type="button" class="btn btn-info" style="width: 13%;height:40px;border-radius: 70px;"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;View</button>
@@ -210,7 +210,7 @@
                                                         <label style="font-size: 24px;">Appendix ‘C’ / परिशिष्ट 'क'<span style="color: red"> *</span> </label>
                                                         <div class="col-12 d-inline-flex">
                                                             <div class="custom-file pmd-custom-file-filled" style="width: 758px;">
-                                                                <input type="file"  class="pmd-custom-file-filled"   name="photoid" id="exampleInputFile" accept="application/pdf" required>
+                                                                <input type="file"  class="pmd-custom-file-filled"   name="app_c" id="exampleInputFile" accept="application/pdf" required>
                                                                 <label class="custom-file-label" for="exampleInputFile">Choose file</label>&nbsp;
                                                             </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                             <button type="button" class="btn btn-info" style="width: 13%;height:40px;border-radius: 70px;"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;View</button>
@@ -223,10 +223,10 @@
                                                         <div class="d-inline-flex">
                                                             <div class="form-group col-5">
                                                                 <label>Certificate Number / सर्टिफिकेट नंबर</label>
-                                                                <input type="text" class="form-control" style="width: 300px;"></div>
+                                                                <input type="text" name="creamy_layer_num" class="form-control" style="width: 300px;"></div>
                                                             <div class="col-12 d-inline-flex" style="padding-top: 4%;">
                                                                 <div class="custom-file pmd-custom-file-filled"   style="width: 400px;">
-                                                                    <input type="file"  class="pmd-custom-file-filled"" name="photoid" id="exampleInputFile" accept="application/pdf" required>
+                                                                    <input type="file"  class="pmd-custom-file-filled" name="creamy_layer_certificate" id="exampleInputFile" accept="application/pdf" required>
                                                                     <label class="custom-file-label" for="exampleInputFile">Choose file</label>&nbsp;
                                                                 </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                 <button type="button" class="btn btn-info" style="width: 15%;height:40px;border-radius: 70px;"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;View</button>
@@ -242,10 +242,10 @@
                                                         <div class="d-inline-flex">
                                                             <div class="form-group col-5">
                                                                 <label>Certificate Number / सर्टिफिकेट नंबर</label>
-                                                                <input type="text" class="form-control" style="width: 300px;"></div>
+                                                                <input type="text" name="caste_num" class="form-control" style="width: 300px;"></div>
                                                             <div class="col-12 d-inline-flex" style="padding-top: 4%;">
                                                                 <div class="custom-file pmd-custom-file-filled"   style="width: 400px;">
-                                                                    <input type="file"  class="pmd-custom-file-filled"" name="photoid" id="exampleInputFile" accept="application/pdf" required>
+                                                                    <input type="file"  class="pmd-custom-file-filled" name="caste_certificate" id="exampleInputFile" accept="application/pdf" required>
                                                                     <label class="custom-file-label" for="exampleInputFile">Choose file</label>&nbsp;
                                                                 </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                 <button type="button" class="btn btn-info" style="width: 15%;height:40px;border-radius: 70px;"><i class="far fa-eye"></i>&nbsp;&nbsp;&nbsp;View</button>
