@@ -25,6 +25,7 @@ if ( isset( $_POST[ "submit" ] ) ) {
     $domicile = rand(1000,10000)."=".$_FILES["domicile_certificate"]["name"];
     $nationality = rand(1000,10000)."=".$_FILES["nationality_certificate"]["name"];
     $birth = rand(1000,10000)."=".$_FILES["birth_certificate"]["name"];
+    $aadhar_card = rand(1000,10000)."=".$_FILES["aadhar_card"]["name"];
     $pan_card = rand(1000,10000)."=".$_FILES["pan_card"]["name"];
     $college = rand(1000,10000)."=".$_FILES["clg_letter"]["name"];
     $risk = rand(1000,10000)."=".$_FILES["risk_certificate"]["name"];
@@ -40,13 +41,14 @@ if ( isset( $_POST[ "submit" ] ) ) {
     $tname3 = $_FILES["domicile_certificate"]["tmp_name"];
     $tname4 = $_FILES["nationality_certificate"]["tmp_name"];
     $tname5 = $_FILES["birth_certificate"]["tmp_name"];
-    $tname6 = $_FILES["pan_card"]["tmp_name"];
-    $tname7 = $_FILES["clg_letter"]["tmp_name"];
-    $tname8 = $_FILES["risk_certificate"]["tmp_name"];
-    $tname9 = $_FILES["app_a"]["tmp_name"];
-    $tname10 = $_FILES["app_c"]["tmp_name"];
-    $tname11 = $_FILES["creamy_layer_certificate"]["tmp_name"];
-    $tname12 = $_FILES["caste_certificate"]["tmp_name"];
+    $tname6 = $_FILES["aadhar_card"]["tmp_name"];
+    $tname7 = $_FILES["pan_card"]["tmp_name"];
+    $tname8 = $_FILES["clg_letter"]["tmp_name"];
+    $tname9 = $_FILES["risk_certificate"]["tmp_name"];
+    $tname10 = $_FILES["app_a"]["tmp_name"];
+    $tname12 = $_FILES["app_c"]["tmp_name"];
+    $tname12 = $_FILES["creamy_layer_certificate"]["tmp_name"];
+    $tname13 = $_FILES["caste_certificate"]["tmp_name"];
 
 
     $upload_file1 ='../Candidate_file/Candidate_10_marksheet_certificate';
