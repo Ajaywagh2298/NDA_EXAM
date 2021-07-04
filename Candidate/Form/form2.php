@@ -308,7 +308,7 @@ $cad_id = $_SESSION['cad_regist_id'];
                                                     </div>
                                                     <br>
                                                     <div class="text-center">
-                                                        <button name="submit" type="button" class="btn btn-primary" style="width: 30%;">Continue / आगे बढ़ें</button>
+                                                        <button name="submit" type=submit" class="btn btn-primary" style="width: 30%;">Continue / आगे बढ़ें</button>
                                                     </div>
                                                 </form><br>
                                             </div>
