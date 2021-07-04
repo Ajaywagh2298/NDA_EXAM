@@ -31,22 +31,22 @@
                 var f = alpha[Math.floor(Math.random() * alpha.length)];
                 var g = alpha[Math.floor(Math.random() * alpha.length)];
             }
-           //var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
-            var code = a  + b + c  + d +  e +  f  + g;
+           var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
+            //var code = a  + b + c  + d +  e +  f  + g;
             document.getElementById("mainCaptcha").value = code
         }
 
-       /* function ValidCaptcha(){
+       function ValidCaptcha(){
             var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
             var string2 = document.getElementById('txtInput').value;
             if (string1 == string2){
-                window.location.href="form2.php";
+                return true;
             }
             else{
-
-                window.location.href=window.location.href;
+                return  false;
+                window.location.href="login.php";
             }
-        } */
+        }
         function removeSpaces(string){
             return string.split(' ').join('');
         }
@@ -89,7 +89,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label >Birth Of Date / जन्म की तारीख <span style="color: red">*</span> </label>
-                                        <input type="text" name="date" class="form-control" id="exampleInputPassword">
+                                        <input type="date" name="date" class="form-control" id="exampleInputPassword">
                                     </div>
                                     <div class="form-group text-center">
                                         <label>Captcha <spans style="color: red">*</spans></label><br>
@@ -100,7 +100,7 @@
                                         </div>
                                     </div><br><br>
                                     <div class="form-group text-center">
-                                        <button  type="submit" name="submit" style="width: 200px;background: #2e6da4;" onclick="//ValidCaptcha();" class="btn btn-primary">Login / लॉग इन करें</button>
+                                        <button  type="submit" name="submit" style="width: 200px;background: #2e6da4;" onclick="ValidCaptcha();" class="btn btn-primary">Login / लॉग इन करें</button>
                                     </div>
                                 </form>
                                 <div class="text-center">
