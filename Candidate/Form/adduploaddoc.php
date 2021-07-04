@@ -46,7 +46,7 @@ if ( isset( $_POST[ "submit" ] ) ) {
     $tname8 = $_FILES["clg_letter"]["tmp_name"];
     $tname9 = $_FILES["risk_certificate"]["tmp_name"];
     $tname10 = $_FILES["app_a"]["tmp_name"];
-    $tname12 = $_FILES["app_c"]["tmp_name"];
+    $tname11 = $_FILES["app_c"]["tmp_name"];
     $tname12 = $_FILES["creamy_layer_certificate"]["tmp_name"];
     $tname13 = $_FILES["caste_certificate"]["tmp_name"];
 
@@ -63,19 +63,30 @@ if ( isset( $_POST[ "submit" ] ) ) {
     $upload_file10 ='../Candidate_file/Candidate_app_a';
     $upload_file11 ='../Candidate_file/Candidate_app_c';
     $upload_file12 ='../Candidate_file/Candidate_creamy_layer_certificate';
-    $upload_file12 ='../Candidate_file/Candidate_caste_certificate';
+    $upload_file13 ='../Candidate_file/Candidate_caste_certificate';
 
-    move_uploaded_file($tname,$upload_file.'/'.$photo);
-    move_uploaded_file($tname2,$upload_file1.'/'.$sign);
+    move_uploaded_file($tname1,$upload_file1.'/'.$mark10);
+    move_uploaded_file($tname2,$upload_file2.'/'.$mark12);
+    move_uploaded_file($tname3,$upload_file3.'/'.$domicile);
+    move_uploaded_file($tname4,$upload_file4.'/'.$nationality);
+    move_uploaded_file($tname5,$upload_file5.'/'.$birth);
+    move_uploaded_file($tname6,$upload_file6.'/'.$aadhar_card);
+    move_uploaded_file($tname7,$upload_file7.'/'.$pan_card);
+    move_uploaded_file($tname8,$upload_file8.'/'.$college);
+    move_uploaded_file($tname9,$upload_file9.'/'.$risk);
+    move_uploaded_file($tname10,$upload_file10.'/'.$app_a);
+    move_uploaded_file($tname11,$upload_file11.'/'.$app_c);
+    move_uploaded_file($tname12,$upload_file12.'/'.$creamy);
+    move_uploaded_file($tname13,$upload_file13.'/'.$caste);
 
-    mysqli_query( $conn,"")or die( mysqli_error( $conn ) );
+    mysqli_query( $conn,"UPDATE `candidate_t2` SET `10_mark_num`='$_POST[mark_num_12]',`10_mark`='$mark10',`12_mark_num`='$_POST[mark_num_12]',`12_mark`='$mark12',`domicile_num`='$_POST[domicile_num]',`domicile_certificate`='$domicile',`nationality_num`='$_POST[nationality_num]',`nationality_certificate`='$nationality',`birth_certificate`='$birth',`aadhar_card`='$aadhar_card',`pan_num`='$_POST[pan_num]',`pan_card`='$pan_card',`clg_letter`='$college',`risk_certificate`='$risk',`app_a`='$app_a',`app_c`='$app_c',`creamy_layer_num`='$_POST[creamy_layer_num]',`creamy_layer_certificate`='$creamy',`caste_certificate_num`='$_POST[caste_num]',`caste_certificate`='$caste' WHERE `cad_regist_id`='$cad_id'")or die( mysqli_error( $conn ) );
 
 
 
     ?>
     <script type="text/javascript">
         alert( "Form Uploaded successfully!" );
-        window.location = "../../index.php";
+        window.location = "payment.php";
     </script>
     <?php
 
