@@ -65,7 +65,7 @@
                                             <div class="text-center">
                                             </div><br>
                                             <div class="col-xl-12 col-lg-12 col-md-12" style="padding-left: 4%;padding-right: 4%;"><br>
-                                                <form class="form-group">
+                                                <form class="form-group" action="adduploaddoc.php" method="post" enctype="multipart/form-data">
                                                     <div class="form-group">
                                                         <label style="font-size: 24px;">10<sup>th</sup> Marksheet  /  10वीं की मार्कशीट <span style="color: red"> *</span> </label>
                                                         <div class="d-inline-flex">
