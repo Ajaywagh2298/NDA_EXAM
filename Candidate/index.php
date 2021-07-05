@@ -1,4 +1,5 @@
 <?php include "connection.php"; ?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -79,7 +80,7 @@
                                                 <p class="m-0 font-weight-bold text-primary" style="font-size:25px;"></p>
                                             </div><br><br>
                                             <div class="card-body"  style="text-align: center;padding-top: 10px;">
-                                                <a><button type="button" class="btn btn-secondary" style="width: 300px;">Download</button> </a>
+                                                <a href="Admit_card.php"><button type="button" class="btn btn-secondary" style="width: 300px;">Download</button> </a>
                                             </div>
                                             <div class="text-center">
                                                 <p style="font-size: x-large;color: black;">Download the Hall-Ticket <br> हॉल-टिकट डाउनलोड करें</p>
