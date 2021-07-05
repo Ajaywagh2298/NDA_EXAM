@@ -1,4 +1,5 @@
 <?php include "../connection.php"; ?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -81,25 +82,25 @@
                                 <div class="text-center">
                                     <p style="font-size: 30px;font-family: Times New Roman" class="text-gray-900 mb-4">Login</p>
                                 </div>
-                                <form class="user">
+                                <form class="user" method="post" action="">
                                     <div class="form-group">
                                         <label >Registration Number / पंजीकरण संख्या <span style="color: red">*</span> </label>
-                                        <input type="text" class="form-control" id="exampleInputtext">
+                                        <input type="text" name="cad_id" class="form-control" id="exampleInputtext">
                                     </div>
                                     <div class="form-group">
                                         <label >Birth Of Date / जन्म की तारीख <span style="color: red">*</span> </label>
-                                        <input type="date" class="form-control" id="exampleInputPassword">
+                                        <input type="date" name="date" class="form-control" id="exampleInputPassword">
                                     </div>
                                     <div class="form-group text-center">
                                         <label>Captcha <spans style="color: red">*</spans></label><br>
                                         <div class="custom-control d-inline-flex">
-                                             <input type="text" class="form-control" style="font-size: 19px;font-weight: bold;font-family: Times New Roman;width: 150px;" id="mainCaptcha" disabled readonly>&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <input type="text" id="txtInput" class="form-control" style="width: 150px;" maxlength="7" >
+                                            <input type="text" class="form-control" name="capt" style="font-size: 19px;font-weight: bold;font-family: Times New Roman;width: 150px;" id="mainCaptcha" disabled readonly>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="text" id="txtInput" name="txtInput" class="form-control" style="width: 150px;" maxlength="" >
                                             <i onclick="Captcha();" class="fas fa-redo" style="padding: 15px;color: #2e6da4;"></i>
                                         </div>
                                     </div><br><br>
                                     <div class="form-group text-center">
-                                        <a href="" style="width: 200px;background: #2e6da4;" onclick="alert(ValidCaptcha());" class="btn btn-primary">Login / लॉग इन करें</a>
+                                        <button  type="submit" name="submit" style="width: 200px;background: #2e6da4;" onclick="ValidCaptcha();" class="btn btn-primary">Login / लॉग इन करें</button>
                                     </div>
                                 </form>
                                 <div class="text-center">
@@ -111,5 +112,29 @@
             </div>
         </div>
     </div></div>
+<?php
+if(isset($_POST["submit"])){
+    $count=0;
+    $res= mysqli_query($conn,"select * from candidate_t where cad_regist_id='$_POST[cad_id]' && birth_date='$_POST[date]'");
+    $count=mysqli_num_rows($res);
 
+    if($count==0)
+    {
+        ?>
+        <script type="text/javascript">
+            window.location.href=window.location.href;
+        </script>
+    <?php
+    }
+    else
+    {
+    $_SESSION['cad_regist_id'] = $_POST['cad_id'];
+    ?>
+        <script type="text/javascript">
+            window.location.href="index.php";
+        </script>
+        <?php
+    }
+}
+?>
 <?php include "footer.php"; ?>

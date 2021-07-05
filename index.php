@@ -81,7 +81,7 @@
                                                 <p class="m-0 font-weight-bold text-primary" style="font-size:25px;">Login</p>
                                             </div><br><br>
                                             <div class="card-body"  style="text-align: center;padding-top: 10px;">
-                                                <a><button type="button" class="btn btn-secondary" style="width: 300px;">Login</button> </a>
+                                                <a href="Candidate/login.php"><button type="button" class="btn btn-secondary" style="width: 300px;">Login</button> </a>
                                             </div>
                                             <div class="text-center">
                                                 <p style="font-size: x-large;color: #28a745;">All ready Registration complete Candidate login Here</p>
