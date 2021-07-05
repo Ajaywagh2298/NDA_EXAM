@@ -1,4 +1,5 @@
 <?php include "../connection.php"; ?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,7 +61,7 @@
                     <div class="tab-content">
                         <!-- credit card info-->
                         <div id="credit-card" class="tab-pane fade show active pt-3">
-                            <form role="form" onsubmit="event.preventDefault()">
+                            <form role="form" onsubmit="event.preventDefault()" action="" method="post">
                                 <div class="form-group"> <label for="username">
                                         <h6>Card Holder Name / कार्डधारक का नाम <span style="color: red;">*</span></h6>
                                     </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
@@ -133,4 +134,7 @@
             </div>
         </div>
     </div>
+
+
+    <?php session_destroy(); ?>
 <?php include "../footer.php"; ?>
