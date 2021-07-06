@@ -33,19 +33,20 @@
                             <div class="login-form">
                                 <div class="text-center">
                                     <div class="panel-heading" style="text-align: center; margin: 0px;padding: 0px;">
-                                        <img src="../img/logo1.png" style="height: 28%;width: 28%;boarder:2px solid red;">
+                                        <div class="card-body">
+                                            <img src="../img/logo3.png" style="height: 30%;width: 24%;boarder:2px solid red;">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card shadow-lg"><br>
                                     <div class="text-center">
                                         <p style="font-size: 30px;font-family: Times New Roman" class="text-gray-900 mb-4">Login</p>
                                     </div>
-                                    <form class="user">
                                         <div class="col-xl-12 col-lg-12 col-md-12 text-center" style="padding-left:150px;padding-right:150px;">
                                             <form >
                                                 <div class="form-group">
-                                                    <label >User Name<span style="color: red">*</span> </label>
-                                                    <input type="text" class="form-control" id="exampleInputtext">
+                                                    <label >Officer Email Address<span style="color: red">*</span> </label>
+                                                    <input type="email" class="form-control" id="exampleInputtext">
                                                 </div>
                                                 <div class="form-group">
                                                     <label >Password <span style="color: red">*</span> </label>
@@ -55,8 +56,9 @@
                                                 <div class="form-group text-center">
                                                     <a href="" style="width: 200px;background: #2e6da4;" onclick="alert(ValidCaptcha());" class="btn btn-primary">Login</a>
                                                 </div>
+                                            </form>
+                                        </div>
                                         </div<br><br></div>
-                                </form>
                                 <div class="text-center">
                                 </div>
                             </div>
