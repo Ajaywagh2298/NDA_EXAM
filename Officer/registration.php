@@ -1,4 +1,4 @@
-<?php include "connection.php"; ?>
+<?php include "../connection.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,36 +39,11 @@
         <div class="col-lg-2 float-child">
             <div class="container" style="200px;"><img style="height: 200px;padding-bottom: 10px;padding-left: 0px;" src="img/img3.png"> </div>
         </div>
-
-
     </div>
 </div>
 
 
-<!-- Login Content -->
-<div class="container-login">
-    <div class="row justify-content-center">
-        <div class="col-xl-12 col-lg-12 col-md-10">
-            <div class="card shadow-sm my-5">
-                <div class="card-body p-0">
-                    <div class="row">
-                        <div class="col-lg-22">
-                            <div class="login-form">
-                                <div class="text-justify">
-                                    <p class="text-center" style="color: #7d5fff;font-size: 20px;"><b>NOTICE</b></p>
-                                    <div  style=" margin-left:100px; margin-right:100px; margin-top:8px; color:#FF8C00;font-size:16px;">Applicants should note that there will be a ceiling on the number of candidates allotted to each of the Centres except Chennai, Dispur, Kolkata and Nagpur. Allotment of Centres will be on the 'first-apply-first allot' basis, and once the capacity of a particular Centre is attained, the same will be frozen. Applicants are, thus, advised that they may apply early so that they could get a Centre of their choice.
-                                        <br><br/>आवेदकों को ध्यान देना चाहिए कि चेन्नई, दिसपुर, कोलकाता और नागपुर को छोड़कर प्रत्येक केंद्र में आवंटित उम्मीदवारों की संख्या सीमित होगी । केन्द्रों का आवंटन 'पहले आवेदन -पहले आवंटन' के आधार पर किया जाएगा, और केंद्र की निर्धारित सीटें भर जाने पर इसे रोक दिया जाएगा । आवेदकों को इस प्रकार सलाह दी जाती है, कि वे जल्दी आवेदन करे जिससे वे अपनी पसंद का केंद्र ले सके ।</div>
-                                    <br/><div style=" margin-left:100px; margin-right:100px; margin-top:10px; font-size:15px; color:#FF0000;">NB : Notwithstanding the aforesaid provision, The Commission reserve the right to change the Centres at their discretion if the situation demands. विशेष टिप्पणी : उक्त प्रावधान के होते हुए भी स्थिति के अनुसार, आयोग अपने विवेक पर केन्द्रों को बदलने का अधिकार सुरक्षित रखता
-                                        है।</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
