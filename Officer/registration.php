@@ -11,6 +11,13 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/ruang-admin.min.css" rel="stylesheet">
+    <style>  body{
+            -webkit-user-select: none;  /* Chrome all / Safari all */
+            -moz-user-select: none;     /* Firefox all */
+            -ms-user-select: none;      /* IE 10+ */
+            user-select: none;          /* Likely future */
+        }</style>
+
     <style>
         .parent {display: block;position: relative;float: left;line-height: 70px;background-color: #ff3838;border-right:#CCC 1px solid;}
         .parent a{margin: 10px;color: #FFFFFF;text-decoration: none;}
@@ -41,7 +48,71 @@
         </div>
     </div>
 </div>
+<br><br><br>
+<div class="container-login">
+    <div class="row justify-content-center">
+        <div class="col-xl-10 col-lg-10 col-md-10">
+            <div class="card shadow-sm my-5">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-lg-12" >
+                            <div class="login-form">
+                                <div class="text-center">
+                                    <p class="text-center" style="color:#284EFF;font-size: 40px;font-family: Times New Roman;" >
+                                        Officer Registration
+                                    </p>
+                                </div>
+                                <form class="form-group" name="insert" action="" method="post">
+                                    <div class="text-justify" style="border: 1px solid black;padding-left: 120px;padding-right: 120px;border-radius: 10px;">
+                                        <br><br>
+                                        <div class="col-xl-12 col-lg-12 col-md-12" style="padding-left: 10px;">
+                                            <div class="col-12"><br>
+                                                <div class="form-group">
+                                                    <label>Full Name <span style="color: red;">*</span> </label>
+                                                    <input type="text" class="form-control" name="name" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Permanent Number <span style="color: red;">*</span> </label>
+                                                    <input type="text" class="form-control" name="per_number" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Rank <span style="color: red;">*</span> </label>
+                                                    <input type="text" class="form-control" name="rank" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Field <span style="color: red;">*</span> </label>
+                                                    <input type="text" class="form-control" name="rank" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>	Mobile Number <span style="color: red;">*</span> </label>
+                                                    <input type="tel" class="form-control" name="mob_no" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Email <span style="color: red;">*</span> </label>
+                                                    <input type="email" class="form-control" name="email" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Password <span style="color: red;">*</span> </label>
+                                                    <input type="password" class="form-control" name="password" required>
+                                                </div>
+                                                <br>
+                                                <div class="text-center">
+                                                        <button type="reset" class="btn btn-danger" style="width: 200px;">Reset</button>&nbsp;&nbsp;&nbsp;
+                                                        <button  type="submit" name="submit" class="btn btn-info" style="width: 200px;">Registration</button>
+                                                </div> <br><br>
+                                </form>
+                            </div>
 
+                            <div class="text-center">
+                            </div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div></div>
 
 
 
