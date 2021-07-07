@@ -42,16 +42,16 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
                aria-expanded="true" aria-controls="collapseBootstrap">
                 <i class="fas fa-user-graduate"></i>
-                <span>Student</span>
+                <span>Profile</span>
             </a>
             <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Student Details</h6>
-                    <a class="collapse-item" href="students.php">New Student</a>
-                    <a class="collapse-item" href="viewstudentrecord.php">View List</a>
-                    <a class="collapse-item" href="viewstudentsedit1.php">Edit Student</a>
-                    <a class="collapse-item" href="csvstudents.php">Import / Export Data</a>
-                    <a class="collapse-item" href="reports_students.php">Report</a>
+                    <a class="collapse-item" href="">New Student</a>
+                    <a class="collapse-item" href="">View List</a>
+                    <a class="collapse-item" href="">Edit Student</a>
+                    <a class="collapse-item" href="">Import / Export Data</a>
+                    <a class="collapse-item" href="">Report</a>
                 </div>
             </div>
         </li>
@@ -59,116 +59,23 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true"
                aria-controls="collapseForm">
                 <i class="fas fa-chalkboard-teacher"></i>
-                <span>Teacher</span>
+                <span>Candidate</span>
             </a>
             <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Teacher Details</h6>
-                    <a class="collapse-item" href="teacher.php">New Teacher</a>
-                    <a class="collapse-item" href="viewteacher.php">View List</a>
-                    <a class="collapse-item" href="edit_teacher.php">Edit Teacher</a>
-                    <a class="collapse-item" href="teacher_reports.php">Report</a>
+                    <a class="collapse-item" href="">New Teacher</a>
+                    <a class="collapse-item" href="">View List</a>
+                    <a class="collapse-item" href="">Edit Teacher</a>
+                    <a class="collapse-item" href="">Report</a>
                 </div>
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true"
-               aria-controls="collapseTable">
-                <i class="fas fa-user-friends"></i>
-                <span>Staff Members</span>
+            <a class="nav-link collapsed" href="#">
+                <i class="fas fa-sign-out-alt fas"></i>
+                <span>Logout</span>
             </a>
-            <div id="collapseTable" class="collapse"  data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Staff Details</h6>
-                    <a class="collapse-item" href="staff.php">New Staff Member</a>
-                    <a class="collapse-item" href="viewstaff.php">View List</a>
-                    <a class="collapse-item" href="edit_staff.php">Edit Staff</a>
-                    <a class="collapse-item" href="staff_reports.php">Reports</a>
-                </div>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage" aria-expanded="true"
-               aria-controls="collapseTable">
-                <i class="fas fa-book-open"></i>
-                <span>Courses</span>
-            </a>
-            <div id="collapsePage" class="collapse"  data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Courses Details</h6>
-                    <a class="collapse-item" href="course.php">New Courses</a>
-                    <a class="collapse-item" href="editcourse.php">Edit Courses</a>
-                    <a class="collapse-item" href="csvtesting.php">Import / Export Data</a>
-                    <a class="collapse-item" href="deletecourse.php">Delete</a>
-                </div>
-            </div>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCor" aria-expanded="true"
-               aria-controls="collapseTable">
-                <i class="fas fa-braille"></i>
-                <span>Department</span>
-            </a>
-            <div id="collapseCor" class="collapse"  data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Department Details</h6>
-                    <a class="collapse-item" href="departments.php">New Department</a>
-                    <a class="collapse-item" href="editdepartments.php">Edit Department</a>
-                    <a class="collapse-item" href="csvdepartments.php">Import / Export CSV</a>
-                    <a class="collapse-item" href="deletedepartment.php">Delete</a>
-                </div>
-            </div>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseExam" aria-expanded="true"
-               aria-controls="collapseTable">
-                <i class="fas fa-pen-nib"></i>
-                <span>Exams</span>
-            </a>
-            <div id="collapseExam" class="collapse"  data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Exams Details</h6>
-                    <a class="collapse-item" href="markstep1.php">Choose Class</a>
-                    <a class="collapse-item" href="markstep3.php">Enter Marks</a>
-                    <a class="collapse-item" href="markstep7.php">Print Transcript</a>
-                </div>
-            </div>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseHost" aria-expanded="true"
-               aria-controls="collapseTable">
-                <i class="fas fa-hotel"></i>
-                <span>Hostel</span>
-            </a>
-            <div id="collapseHost" class="collapse"  data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Hostel Details</h6>
-                    <a class="collapse-item" href="hostel.php">New Room</a>
-                    <a class="collapse-item" href="">Manage Room</a>
-                    <a class="collapse-item" href="">Assign Room</a>
-                    <a class="collapse-item" href="">Delete Room</a>
-                    <a class="collapse-item" href="">View Occupants</a>
-                    <a class="collapse-item" href="">Search</a>
-                </div>
-            </div>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCor" aria-expanded="true"
-               aria-controls="collapseTable">
-                <i class="fas fa-sms"></i>
-                <span>Message</span>
-            </a>
-            <div id="collapseCor" class="collapse"  data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">SMS</h6>
-                    <a class="collapse-item" href="sms.php">Type Contacts</a>
-                    <a class="collapse-item" href="">Upload CSV File</a>
-                </div>
-            </div>
         </li>
         <hr class="sidebar-divider">
 
@@ -227,7 +134,7 @@
                     <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="./">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                        <li class="breadcrumb-item active" aria-current="page"></li>
                     </ol>
                 </div>
             </div>
