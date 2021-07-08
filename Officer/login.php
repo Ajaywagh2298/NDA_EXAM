@@ -43,18 +43,18 @@
                                         <p style="font-size: 30px;font-family: Times New Roman" class="text-gray-900 mb-4">Login</p>
                                     </div>
                                         <div class="col-xl-12 col-lg-12 col-md-12 text-center" style="padding-left:150px;padding-right:150px;">
-                                            <form >
+                                            <form action="" method="post" class="form-group" >
                                                 <div class="form-group">
                                                     <label >Officer Email Address<span style="color: red">*</span> </label>
-                                                    <input type="email" class="form-control" id="exampleInputtext">
+                                                    <input type="email" name="email" class="form-control" id="exampleInputtext">
                                                 </div>
                                                 <div class="form-group">
                                                     <label >Password <span style="color: red">*</span> </label>
-                                                    <input type="password" class="form-control" id="exampleInputPassword">
+                                                    <input type="password" name="pwd" class="form-control" id="exampleInputPassword">
                                                 </div>
                                                 <br><br>
                                                 <div class="form-group text-center">
-                                                    <a href="" style="width: 200px;background: #2e6da4;" onclick="alert(ValidCaptcha());" class="btn btn-primary">Login</a>
+                                                    <button style="width: 200px;background: #2e6da4;" name="submit1" class="btn btn-primary">Login</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -68,7 +68,31 @@
             </div>
         </div>
     </div></div>
+<?php
+if(isset($_POST["submit1"])){
+    $count=0;
+    $res= mysqli_query($conn,"select * from officer where Email='$_POST[email]' && Password='$_POST[pwd]'");
+    $count=mysqli_num_rows($res);
 
+    if($count==0)
+    {
+        ?>
+        <script type="text/javascript">
+            window.location.href=window.location.href;
+        </script>
+    <?php
+    }
+    else
+    {
+    $_SESSION['cad_regist_id'] = $_POST['cad_id'];
+    ?>
+        <script type="text/javascript">
+            window.location.href="index.php";
+        </script>
+        <?php
+    }
+}
+?>
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
