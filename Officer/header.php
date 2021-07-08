@@ -56,7 +56,7 @@ $email = $_SESSION['email']; ?>
             <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Officer Details</h6>
-                    <a class="collapse-item" href="">Profile</a>
+                    <a class="collapse-item" href="profile.php">Profile</a>
                     <a class="collapse-item" href="">Edit Profile</a>
                     <a class="collapse-item" href="">Notification</a>
                     <a class="collapse-item" href="">Email</a>
