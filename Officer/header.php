@@ -50,17 +50,17 @@ $email = $_SESSION['email']; ?>
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
                aria-expanded="true" aria-controls="collapseBootstrap">
-                <i class="fas fa-user-graduate"></i>
-                <span>Profile</span>
+                <i class="fas fa-user-tie"></i>
+                <span>Officer Profile</span>
             </a>
             <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Student Details</h6>
-                    <a class="collapse-item" href="">New Student</a>
-                    <a class="collapse-item" href="">View List</a>
-                    <a class="collapse-item" href="">Edit Student</a>
-                    <a class="collapse-item" href="">Import / Export Data</a>
-                    <a class="collapse-item" href="">Report</a>
+                    <h6 class="collapse-header">Officer Details</h6>
+                    <a class="collapse-item" href="">Profile</a>
+                    <a class="collapse-item" href="">Edit Profile</a>
+                    <a class="collapse-item" href="">Notification</a>
+                    <a class="collapse-item" href="">Email</a>
+                    <a class="collapse-item" href="">contact</a>
                 </div>
             </div>
         </li>
@@ -72,11 +72,15 @@ $email = $_SESSION['email']; ?>
             </a>
             <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Teacher Details</h6>
-                    <a class="collapse-item" href="">New Teacher</a>
-                    <a class="collapse-item" href="">View List</a>
-                    <a class="collapse-item" href="">Edit Teacher</a>
-                    <a class="collapse-item" href="">Report</a>
+                    <h6 class="collapse-header">Candidate Details</h6>
+                    <a class="collapse-item" href="">Candidate List</a>
+                    <a class="collapse-item" href="">Document Verification</a>
+                    <a class="collapse-item" href="">Medical Report</a>
+                    <a class="collapse-item" href="">Day 1 Report</a>
+                    <a class="collapse-item" href="">Day 2 Report</a>
+                    <a class="collapse-item" href="">Day 3 Report</a>
+                    <a class="collapse-item" href="">Day 4 Report</a>
+                    <a class="collapse-item" href="">Day 5 Report</a>
                 </div>
             </div>
         </li>
