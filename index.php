@@ -69,7 +69,7 @@
                                                 <p class="m-0 font-weight-bold text-primary" style="font-size:25px;">Notification</p>
                                             </div>
                                             <div class="card-body">
-                                                Hello today we have to complete one page of our site
+
 
                                             </div>
                                         </div>
