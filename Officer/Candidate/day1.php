@@ -25,7 +25,7 @@
                         <div class="col-lg-12">
                             <div class="login-form">
                                 <div class="text-left">
-                                    <h1 class="h4 text-gray-900 mb-4">Register</h1>
+                                    <h1 class="h4 text-gray-900 mb-4">Test Mark sheet</h1>
                                 </div>
                                 <div class="text-left" style="width: 300px;">
                                     <select class="form-control">
