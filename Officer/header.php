@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php include "connection.php"; ?>
+<?php session_start();
+$email = $_SESSION['email']; ?>
 
 <head>
     <meta charset="utf-8">
@@ -22,18 +25,24 @@
             </div>
         <hr class="sidebar-divider my-0">
         <li class="nav-item active">
+            <?php
+            $res=mysqli_query($conn,"select Name , Rank from officer where Email='$email'");
+            $rows =mysqli_fetch_all($res,MYSQLI_ASSOC);
+            foreach($rows as $row );
+            ?>
             <a class="nav-link d-inline-flex" href="">
                 <div class="col-1">
                 <i class="fas fa-user-shield" style="padding-top: 10px;font-size: 20px;"></i>
                 </div>
-                <div class="col-12 text-center">
-                <span style="font-family: Courier;font-size: 100%">Ajay Rajendra Wagh</span>
+                <div class="col-12 text-center" style="padding-top: 0px;">
+                <span style="font-family: Courier;font-size: 100%"><?php echo $row['Name']; ?></span>
                 </div></a>
             <a class="nav-link d-inline-flex" href="">
                 <div class="col-12 text-center">
-                    <span style="font-family: Courier;font-size: 100%">Rank</span>
+                    <span style="font-family: Courier;font-size: 100%"><?php echo $row['Rank'];  ?></span>
                 </div></a>
         </li>
+
         <hr class="sidebar-divider">
         <div class="sidebar-heading">
 
@@ -133,7 +142,7 @@
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
                     <ol class="breadcrumb">
-
+                        <span style="font-size: 20px;">Email : <?php echo $email; ?></span>
                     </ol>
                 </div>
             </div>

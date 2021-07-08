@@ -85,7 +85,7 @@ if(isset($_POST["submit1"])){
     }
     else
     {
-    $_SESSION['cad_regist_id'] = $_POST['cad_id'];
+    $_SESSION['email'] = $_POST['email'];
     ?>
         <script type="text/javascript">
             window.location.href="index.php";

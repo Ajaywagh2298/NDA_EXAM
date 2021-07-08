@@ -1,5 +1,4 @@
 <?php include "../connection.php"; ?>
-
 <?php include 'header.php'; ?>
     <script type="text/javascript">
 
