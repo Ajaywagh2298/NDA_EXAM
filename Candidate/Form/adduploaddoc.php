@@ -79,7 +79,7 @@ if ( isset( $_POST[ "submit" ] ) ) {
     move_uploaded_file($tname12,$upload_file12.'/'.$creamy);
     move_uploaded_file($tname13,$upload_file13.'/'.$caste);
 
-    mysqli_query( $conn,"UPDATE `candidate_t2` SET `10_mark_num`='$_POST[mark_num_12]',`10_mark`='$mark10',`12_mark_num`='$_POST[mark_num_12]',`12_mark`='$mark12',`domicile_num`='$_POST[domicile_num]',`domicile_certificate`='$domicile',`nationality_num`='$_POST[nationality_num]',`nationality_certificate`='$nationality',`birth_certificate`='$birth',`aadhar_card`='$aadhar_card',`pan_num`='$_POST[pan_num]',`pan_card`='$pan_card',`clg_letter`='$college',`risk_certificate`='$risk',`app_a`='$app_a',`app_c`='$app_c',`creamy_layer_num`='$_POST[creamy_layer_num]',`creamy_layer_certificate`='$creamy',`caste_certificate_num`='$_POST[caste_num]',`caste_certificate`='$caste' WHERE `cad_regist_id`='$cad_id'")or die( mysqli_error( $conn ) );
+    mysqli_query( $conn,"INSERT INTO `candidate_t2` values ('$_POST[mark_num_10]','$mark10','$_POST[mark_num_12]','$mark12','$_POST[domicile_num]','$domicile','$_POST[nationality_num]','$nationality','$birth','$aadhar_card','$_POST[pan_num]','$pan_card','$college','$risk','$app_a','$app_c','$_POST[creamy_layer_num]','$creamy','$_POST[caste_num]','$caste')")or die( mysqli_error( $conn ) );
 
 
 
