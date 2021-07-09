@@ -32,7 +32,22 @@
             -ms-user-select: none;      /* IE 10+ */
             user-select: none;          /* Likely future */
         }</style>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("select").change(function(){
+                $(this).find("option:selected").each(function(){
+                    var optionValue = $(this).attr("value");
+                    if(optionValue){
+                        $(".box").not("." + optionValue).hide();
+                        $("." + optionValue).show();
+                    } else{
+                        $(".box").hide();
+                    }
+                });
+            }).change();
+        });
+    </script>
 </head>
 <?php include "connection.php"; ?>
 <?php
@@ -161,29 +176,8 @@ if($cad_regist_id == " "){
                                         </select><br>
                                     </div>
 
-                                    <div class="form-group">
-                                        <label >Do you belong to Minority / क्या आप अल्पसंख्यक हैं <span style="color: red"></span> </label>
-                                        <select name="minority_status" class="form-control">
-                                            <option value="NULL">Select Minority</option>
-                                            <option value="no">No / नहीं</option>
-                                            <option value="yes">Yes / हां</option>
-                                        </select>
-                                    </div>
 
-                                    <div class="form-group">
-                                        <label >If Yes Select the Religion / यदि हां तो कृपया धर्म का चयन करें<span style="color: red"></span> </label>
-                                        <select name="religion" id="minority_code" style="visibility: visible;" class="form-control">
-                                            <option value="NULL" class="selInstruct">Select</option>
-                                            <option value="muslim">Muslim</option>
-                                            <option value="christian">Christian</option>
-                                            <option value="sikh">Sikh</option>
-                                            <option value="buddhist">Buddhist</option>
-                                            <option value="zoroastrian">Zoroastrian</option>
-                                            <option value="jain">Jain</option>
-                                        </select>
-                                    </div><br>
-
-                                    <div class="col-xl-10 col-lg-10 col-md-10" style="border-bottom: 2px solid #34495E;" >
+                                    <div class="obc box col-xl-10 col-lg-10 col-md-10" style="border-bottom: 2px solid #34495E;" >
                                         <p style="color:#0089FF;"> This option For OBCs Candidate / ओबीसी उम्मीदवार के लिए यह विकल्प *</p>
                                         <p style="border-bottom: 2px solid #34495E;"></p>
                                     <div class="form-group" style="padding-left: 20px;">
@@ -192,12 +186,11 @@ if($cad_regist_id == " "){
                                             <option value="NULL class="selInstruct">Select</option>
                                             <option value="yes">Yes / हां</option>
                                             <option value="no">No / नहीं</option>
-                                        </select><br>
+                                        </select>
                                         <p style="color:#E74C3C;">Candidates belonging to OBCs but coming in the ' Creamy Layer ' and thus not being entitled to
                                             OBC reservation will be treated as General community. / जो उम्मीरदवार अन्य  पिछड़ा वर्ग से संबंध रखते हैं परंतु ‘क्रीमी लेयर’ के अंतर्गत आते हैं और इस प्रकार ओबीसी आरक्षण के लिए पात्र नहीं हैं, उन्हें  सामान्य  समुदाय के तौर पर माना जाएगा।</p>
-                                    </div></div><br><br>
-
-                                    <div class="col-xl-10 col-lg-10 col-md-10"  style="border-bottom: 2px solid #34495E;">
+                                    </div></div>
+                                    <div class="sc box col-xl-10 col-lg-10 col-md-10"  style="border-bottom: 2px solid #34495E;">
                                         <p style="color:#0089FF;"> This option For SC / ST Candidate / ओबीसी उम्मीदवार के लिए यह विकल्प *</p>
                                         <p style="border-bottom: 2px solid #34495E;"></p>
                                         <div class="form-group" style="padding-left: 20px;">
@@ -214,6 +207,44 @@ if($cad_regist_id == " "){
                                             <input type="date" name="certificate_date" class="form-control">
                                         </div>
                                     </div><br>
+                                            <div class="st box col-xl-10 col-lg-10 col-md-10"  style="border-bottom: 2px solid #34495E;">
+                                                <p style="color:#0089FF;"> This option For SC / ST Candidate / ओबीसी उम्मीदवार के लिए यह विकल्प *</p>
+                                                <p style="border-bottom: 2px solid #34495E;"></p>
+                                                <div class="form-group" style="padding-left: 20px;">
+                                                    <label> Community Certificate Number / सामुदायिक प्रमाण पत्र संख्या </label>
+                                                    <input type="tel" class="form-control" name="certificate_num"><br>
+                                                    <p style="color:#E74C3C">SC /ST Candidates claiming relaxation must uensure that all certificates should have been issued earlier than the closing date. <br> अ.जा./अ.ज.जा. के आरक्षण का दावा करने वाले उम्मी दवारों को यह सुनिश्चित कर लेना चाहिए कि सभी प्रमाण पत्र अंतिम तिथि से पहले जारी किए गए हैं।</p>
+                                                </div>
+                                                <div class="form-group" style="padding-left: 20px;">
+                                                    <label>Community Certificate Issuing Authority Designation / सामुदायिक प्रमाण पत्र जारी करने वाले प्राधिकरण पदनाम  </label>
+                                                    <input type="text" name="certificate_issue" class="form-control">
+                                                </div><br>
+                                                <div class="form-group" style="padding-left: 20px;">
+                                                    <label>Community certificate date / समुदाय प्रमाण पत्र की तारीख </label>
+                                                    <input type="date" name="certificate_date" class="form-control">
+                                                </div>
+                                            </div><br>
+                                            <div class="form-group">
+                                                <label >Do you belong to Minority / क्या आप अल्पसंख्यक हैं <span style="color: red"></span> </label>
+                                                <select name="minority_status" class="form-control">
+                                                    <option value="NULL">Select Minority</option>
+                                                    <option value="no">No / नहीं</option>
+                                                    <option value="yes-min">Yes / हां</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="yes-min box form-group">
+                                                <label >If Yes Select the Religion / यदि हां तो कृपया धर्म का चयन करें<span style="color: red"></span> </label>
+                                                <select name="religion" id="minority_code" style="visibility: visible;" class="form-control">
+                                                    <option value="NULL" class="selInstruct">Select</option>
+                                                    <option value="muslim">Muslim</option>
+                                                    <option value="christian">Christian</option>
+                                                    <option value="sikh">Sikh</option>
+                                                    <option value="buddhist">Buddhist</option>
+                                                    <option value="zoroastrian">Zoroastrian</option>
+                                                    <option value="jain">Jain</option>
+                                                </select>
+                                            </div>
                                             <div class="col-12"><br>
                                                 <div class="text-center" style="padding-top: 2%;width: 40%;">
                                                     <p style="font-size: 20px;">Educational Qualification / शैक्षिक योग्यता</p>
