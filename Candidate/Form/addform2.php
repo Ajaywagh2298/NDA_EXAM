@@ -21,7 +21,7 @@ if ( isset( $_POST[ "submit" ] ) ) {
     ?>
     <script type="text/javascript">
         alert( "Registered successfully!" );
-        window.location = "uploaddoc.php";
+        window.location = "payment.php";
     </script>
     <?php
 

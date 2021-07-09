@@ -86,7 +86,7 @@ if ( isset( $_POST[ "submit" ] ) ) {
     ?>
     <script type="text/javascript">
         alert( "Form Uploaded successfully!" );
-        window.location = "payment.php";
+        window.location = "../index.php";
     </script>
     <?php
 
