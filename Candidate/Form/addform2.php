@@ -14,7 +14,7 @@ if ( isset( $_POST[ "submit" ] ) ) {
          </script>
          <?php
      } else  {*/
-    mysqli_query( $conn,"INSERT INTO candidate_t2 (`id`, `cad_regist_id`, `center_1`, `center_2`, `center_3`) VALUES (NULL,'$_POST[cad_re_id]','$_POST[center1]','$_POST[center2]','$_POST[center3]]')")or die( mysqli_error( $conn ) );
+    mysqli_query( $conn,"UPDATE `candidate_t1` SET `center_1`='$_POST[center1]',`center_2`='$_POST[center2]',`center_3`='$_POST[center3]' WHERE `cad_regist_id`='$_POST[cad_re_id]'")or die( mysqli_error( $conn ) );
 
 
 
