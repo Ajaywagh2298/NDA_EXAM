@@ -125,7 +125,10 @@ $cad_id = $_SESSION['cad_regist_id'];
                                                 </div>
                                                 <div class="form-group">
                                                     <label >Whether a student is National Cadet Corps (NCC) candidate  / क्या कोई छात्र राष्ट्रीय कैडेट कोर (एनसीसी) का उम्मीदवार हैा <span style="color: red">*</span> </label>
-                                                    <select name="ncc_cad" id="ndasonjco" class="form-control"><option value="no">No / नहीं</option><option value="yes">Yes / हां   </option></select>
+                                                    <select name="ncc_cad" id="ndasonjco" class="form-control">
+                                                        <option value="no">No / नहीं</option>
+                                                        <option value="yes">Yes / हां   </option>
+                                                    </select>
                                                 </div>
                                                 <br>
                                                 <div class="text-center">

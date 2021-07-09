@@ -26,7 +26,7 @@ if ( isset( $_POST[ "submit" ] ) ) {
     move_uploaded_file($tname,$upload_file.'/'.$photo);
     move_uploaded_file($tname2,$upload_file1.'/'.$sign);
 
-    mysqli_query( $conn,"INSERT INTO `candidate_t1`VALUES (NULL,'$_POST[cad_reg_id]','$_POST[proof]','$_POST[proof_id]','$photo','$sign','$_POST[military_school_student]','$_POST[son_military_staff]','$_POST[ncc_cad]')")or die( mysqli_error( $conn ) );
+    mysqli_query( $conn,"INSERT INTO `candidate_t1`VALUES (NULL,'$_POST[cad_reg_id]','$_POST[proof]','$_POST[proof_id]','$photo','$sign','$_POST[military_school_student]','$_POST[son_military_staff]','$_POST[ncc_cad]','','','')")or die( mysqli_error( $conn ) );
 
 
 
