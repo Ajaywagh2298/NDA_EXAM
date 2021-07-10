@@ -48,7 +48,7 @@
                                                     <div class="text-center">
                                                         <h1 class="h4 text-gray-900 mb-4">Picture Prescription Test</h1>
                                                     </div>
-                                                    <form>
+                                                    <form action="" method="post" class="form-group">
                                                         <table class="table align-items-center table-flush" id="dataTable">
                                                             <thead class="thead-light text-center">
                                                             <tr><th></th>
