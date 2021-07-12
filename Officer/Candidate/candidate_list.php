@@ -18,33 +18,18 @@
                                             <thead class="thead-light">
                                             <tr>
                                                 <th>Chest Number</th>
-                                                <th>Document</th>
-                                                <th>Day 1</th>
-                                                <th>Day 2</th>
-                                                <th>Day 3</th>
-                                                <th>Day 4</th>
-                                                <th>Day 5</th>
+                                                <th>Document Status </th>
                                             </tr>
                                             </thead>
                                             <tfoot>
                                             <tr>
                                                 <th>Chest Number</th>
-                                                <th>Document</th>
-                                                <th>Day 1</th>
-                                                <th>Day 2</th>
-                                                <th>Day 3</th>
-                                                <th>Day 4</th>
-                                                <th>Day 5</th>
+                                                <th>Document Status</th>
                                             </tr>
                                             </tfoot>
                                             <tbody>
                                             <tr>
                                                 <td</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
                                                 <td></td>
                                             </tr>
                                             </tbody>
