@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-<?php $per_num=$_SESSION['per_num']?>
+<?php $per_num=$_SESSION['per_num']; ?>
 
     <div class="col-md-12" style="padding-left: 80px;padding-right: 80px;">
         <div class="card mb-5">

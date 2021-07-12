@@ -81,7 +81,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Field <span style="color: red;">*</span> </label>
-                                                    <input type="text" class="form-control" name="rank" required>
+                                                    <input type="text" class="form-control" name="field" required>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>	Mobile Number <span style="color: red;">*</span> </label>
@@ -111,8 +111,19 @@
         </div>
     </div>
 </div>
-</div>
-</div></div>
+<?php
+if ( isset( $_POST[ "submit" ] ) ) {
+    mysqli_query($conn, "INSERT INTO `officer` VALUES (NULL ,'$_POST[per_number]','$_POST[rank]','$_POST[name]','$_POST[mob_no]','$_POST[email]','$_POST[password]','$_POST[field]')") or die(mysqli_error($conn));
+    ?>
+
+    <script type="text/javascript">
+        alert( "Registered successfully!" );
+        window.location = "registration.php";
+    </script>
+
+    <?php
+}
+?>
 
 
 
