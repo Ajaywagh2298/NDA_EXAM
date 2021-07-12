@@ -70,6 +70,7 @@ if ( isset( $_POST[ "submit" ] ) ) {
     </script>
 
 <?php
+
 }
 ?>
 <?php include "footer.php"; ?>

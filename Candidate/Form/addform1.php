@@ -25,6 +25,7 @@ if ( isset( $_POST[ "submit" ] ) ) {
             alert( "Registered successfully!" );
             window.location = "secondform.php";
         </script>
+
         <?php
 
 }

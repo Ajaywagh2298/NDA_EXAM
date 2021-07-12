@@ -114,6 +114,7 @@
 <?php
 if ( isset( $_POST[ "submit" ] ) ) {
     mysqli_query($conn, "INSERT INTO `officer` VALUES (NULL ,'$_POST[per_number]','$_POST[rank]','$_POST[name]','$_POST[mob_no]','$_POST[email]','$_POST[password]','$_POST[field]')") or die(mysqli_error($conn));
+
     ?>
 
     <script type="text/javascript">
