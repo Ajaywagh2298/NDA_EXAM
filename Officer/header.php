@@ -13,7 +13,7 @@ $per_num = $_SESSION['per_num']; ?>
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/ruang-admin.min.css" rel="stylesheet">
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -57,7 +57,7 @@ $per_num = $_SESSION['per_num']; ?>
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Officer Details</h6>
                     <a class="collapse-item" href="profile.php">Profile</a>
-                    <a class="collapse-item" href="">Edit Profile</a>
+                    <a class="collapse-item" href="editform.php">Edit Profile</a>
                     <a class="collapse-item" href="">Notification</a>
                     <a class="collapse-item" href="">Email</a>
                     <a class="collapse-item" href="">contact</a>
