@@ -47,10 +47,10 @@
     <ul id="menu" align="left">
         <li class="parent"><a href="index.php" style="text-decoration:none;"><b>Home / मुखपृष्ठ</b></a></li>
         <li class="parent"><a href="" style="text-decoration:none;"><b>Guidelines to the Candidates / उम्मीदवारों के लिए दिशा-निर्देश</b></a></li>
-        <li class="parent"><a href="" style="text-decoration:none;" target="_blank"><b>FAQ / सामान्य प्रश्न</b></a></li>
-        <li class="parent"><a href="" style="text-decoration:none;" target="_blank"><b>View / Print Application देखें / प्रिंट आवेदन</b></a></li>
-        <li class="parent"><a href="" style="text-decoration:none;"><b>Contact Us / हमसे संपर्क करें</b></a></li>
-        <li class="parent"><a href="" style="text-decoration:none;"><b>Officer Login / अधिकारी लॉगिन</b></a></li>
+        <li class="parent"><a href="" style="text-decoration:none;"><b>FAQ / सामान्य प्रश्न</b></a></li>
+        <li class="parent"><a href="" style="text-decoration:none;"><b>View / Print Application देखें / प्रिंट आवेदन</b></a></li>
+        <li class="parent"><a href="Home/contact.php" style="text-decoration:none;"><b>Contact Us / हमसे संपर्क करें</b></a></li>
+        <li class="parent"><a href="Officer/login.php" style="text-decoration:none;"><b>Officer Login / अधिकारी लॉगिन</b></a></li>
     </ul>
 </div>
 <div class="container-login">

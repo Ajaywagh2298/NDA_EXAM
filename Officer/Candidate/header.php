@@ -2,7 +2,7 @@
 <html lang="en">
 <?php include "../connection.php"; ?>
 <?php session_start();
-$email = $_SESSION['email']; ?>
+$per_num = $_SESSION['per_num']; ?>
 
 <head>
     <meta charset="utf-8">
@@ -26,7 +26,7 @@ $email = $_SESSION['email']; ?>
         <hr class="sidebar-divider my-0">
         <li class="nav-item active">
             <?php
-            $res=mysqli_query($conn,"select Name , Rank from officer where Email='$email'");
+            $res=mysqli_query($conn,"select Name , Rank from officer where Per_Number='$per_num'");
             $rows =mysqli_fetch_all($res,MYSQLI_ASSOC);
             foreach($rows as $row );
             ?>
@@ -39,7 +39,7 @@ $email = $_SESSION['email']; ?>
                 </div></a>
             <a class="nav-link d-inline-flex" href="">
                 <div class="col-12 text-center">
-                    <span style="font-family: Courier;font-size: 100%"><?php echo $row['Rank'];  ?></span>
+                    <span style="font-family: Courier;font-size: 100%">Rank :  <?php echo $row['Rank'];  ?></span>
                 </div></a>
         </li>
 
@@ -73,12 +73,12 @@ $email = $_SESSION['email']; ?>
             <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Candidate Details</h6>
-                    <a class="collapse-item" href="">Candidate List</a>
-                    <a class="collapse-item" href="">Document Verification</a>
+                    <a class="collapse-item" href="candidate_list.php">Candidate List</a>
+                    <a class="collapse-item" href="viewdocs.php">Document Verification</a>
                     <a class="collapse-item" href="">Medical Report</a>
-                    <a class="collapse-item" href="">Day 1 Report</a>
-                    <a class="collapse-item" href="">Day 2 Report</a>
-                    <a class="collapse-item" href="">Day 3 Report</a>
+                    <a class="collapse-item" href="day1.php">Day 1 Report</a>
+                    <a class="collapse-item" href="day2.php">Day 2 Report</a>
+                    <a class="collapse-item" href="day3.php">Day 3 Report</a>
                     <a class="collapse-item" href="">Day 4 Report</a>
                     <a class="collapse-item" href="">Day 5 Report</a>
                 </div>
@@ -127,7 +127,6 @@ $email = $_SESSION['email']; ?>
                     </li>
                     <li class="nav-item dropdown no-arrow">
 
-                        </a>
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
 
                             <div class="dropdown-divider"></div>
@@ -146,7 +145,7 @@ $email = $_SESSION['email']; ?>
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
                     <ol class="breadcrumb">
-                        <span style="font-size: 20px;">Email : <?php echo $email; ?></span>
+                        <span style="font-size: 20px;">User Name : <?php echo $row['Name']; ?></span>
                     </ol>
                 </div>
             </div>

@@ -46,8 +46,8 @@
                                         <div class="col-xl-12 col-lg-12 col-md-12 text-center" style="padding-left:150px;padding-right:150px;">
                                             <form action="" method="post" class="form-group" >
                                                 <div class="form-group">
-                                                    <label >Officer Email Address<span style="color: red">*</span> </label>
-                                                    <input type="email" name="email" class="form-control" id="exampleInputtext">
+                                                    <label >Officer Permanent Number<span style="color: red">*</span> </label>
+                                                    <input type="text" name="per_num" class="form-control" id="exampleInputtext">
                                                 </div>
                                                 <div class="form-group">
                                                     <label >Password <span style="color: red">*</span> </label>
@@ -72,7 +72,7 @@
 <?php
 if(isset($_POST["submit1"])){
     $count=0;
-    $res= mysqli_query($conn,"select * from officer where Email='$_POST[email]' && Password='$_POST[pwd]'");
+    $res= mysqli_query($conn,"select * from officer where Per_Number='$_POST[per_num]' && Password='$_POST[pwd]'");
     $count=mysqli_num_rows($res);
 
     if($count==0)
@@ -85,7 +85,7 @@ if(isset($_POST["submit1"])){
     }
     else
     {
-    $_SESSION['email'] = $_POST['email'];
+    $_SESSION['per_num'] = $_POST['per_num'];
     ?>
         <script type="text/javascript">
             window.location.href="index.php";
