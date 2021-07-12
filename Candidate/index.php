@@ -49,7 +49,7 @@
         <li class="parent"><a href="EditForm/login.php" style="text-decoration:none;" ><b>Edit Application / आवेदन संपादित करें</b></a></li>
         <li class="parent"><a href="" style="text-decoration:none;"><b>View / Print Application देखें / प्रिंट आवेदन</b></a></li>
         <li class="parent"><a href="Form/uploaddoc.php" style="text-decoration:none;"><b>Document Upload / दस्तावेज़ अपलोड</b></a></li>
-        <li class="parent"><a href="" style="text-decoration:none;"><b>Contact Us / हमसे संपर्क करें</b></a></li>
+        <li class="parent"><a href="../Home/contact.php" style="text-decoration:none;"><b>Contact Us / हमसे संपर्क करें</b></a></li>
         <li class="parent"><a href="" style="text-decoration:none;"><b>Logout / लॉग आउट</b></a></li>
     </ul>
 </div>
