@@ -66,7 +66,7 @@
                                                             </tfoot>
                                                             <tbody>
                                                             <tr><td>1</td>
-                                                                <td class="text-center"><input type="text" name="" class="form-control"></td>
+                                                                <td class="text-center"><input type="text" name="che_num1"  class="form-control"></td>
                                                                 <td class="text-center"><input type="tel" name="" class="form-control"></td>
                                                                 <td class="text-center"><?php echo $t; ?></td>
                                                             </tr>
