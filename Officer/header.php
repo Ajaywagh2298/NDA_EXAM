@@ -75,12 +75,13 @@ $per_num = $_SESSION['per_num']; ?>
                     <h6 class="collapse-header">Candidate Details</h6>
                     <a class="collapse-item" href="Candidate/candidate_list.php">Candidate List</a>
                     <a class="collapse-item" href="Candidate/viewdocs.php">Document Verification</a>
-                    <a class="collapse-item" href="">Medical Report</a>
+                    <a class="collapse-item" href="Candidate/medical.php">Medical Report</a>
                     <a class="collapse-item" href="Candidate/day1.php">Day 1 Report</a>
                     <a class="collapse-item" href="Candidate/day2.php">Day 2 Report</a>
                     <a class="collapse-item" href="Candidate/day3.php">Day 3 Report</a>
-                    <a class="collapse-item" href="">Day 4 Report</a>
-                    <a class="collapse-item" href="">Day 5 Report</a>
+                    <a class="collapse-item" href="Candidate/day4.php">Day 4 Report</a>
+                    <a class="collapse-item" href="Candidate/day5.php">Day 5 Report</a>
+                    <a class="collapse-item" href="Candidate/final%20report.php">Final Report</a>
                 </div>
             </div>
         </li>
