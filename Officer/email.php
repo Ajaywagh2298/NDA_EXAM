@@ -278,7 +278,8 @@
 
                             <div class="table-responsive">
                                 <table class="table">
-                                    <tbody><tr>
+                                    <tbody>
+                                    <tr>
                                         <td class="action"><input type="checkbox" /></td>
                                         <td class="action"><i class="fa fa-star-o"></i></td>
                                         <td class="action"><i class="fa fa-bookmark-o"></i></td>
@@ -286,7 +287,22 @@
                                         <td class="subject"><a href="#">Exam Details </a></td>
                                         <td class="time">08:30 PM</td>
                                     </tr>
-
+                                    <tr>
+                                        <td class="action"><input type="checkbox" /></td>
+                                        <td class="action"><i class="fa fa-star-o"></i></td>
+                                        <td class="action"><i class="fa fa-bookmark-o"></i></td>
+                                        <td class="name"><a href="#">Gouri Pawar</a></td>
+                                        <td class="subject"><a href="#">Exam Details </a></td>
+                                        <td class="time">07:40 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="action"><input type="checkbox" /></td>
+                                        <td class="action"><i class="fa fa-star-o"></i></td>
+                                        <td class="action"><i class="fa fa-bookmark-o"></i></td>
+                                        <td class="name"><a href="#">Kamlesh Dugade</a></td>
+                                        <td class="subject"><a href="#">Medical Test Notification </a></td>
+                                        <td class="time">07:00 PM</td>
+                                    </tr>
                                     </tbody></table>
                             </div>
 
