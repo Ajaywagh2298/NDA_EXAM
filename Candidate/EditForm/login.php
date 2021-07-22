@@ -1,4 +1,5 @@
-<?php include "connection.php"; ?>
+<?php include "connection.php"; ?> /* connections..
+
 <!DOCTYPE html>
 <html lang="en">
 
