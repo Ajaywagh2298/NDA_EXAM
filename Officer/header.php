@@ -59,8 +59,8 @@ $per_num = $_SESSION['per_num']; ?>
                     <h6 class="collapse-header">Officer Details</h6>
                     <a class="collapse-item" href="profile.php">Profile</a>
                     <a class="collapse-item" href="editform.php">Edit Profile</a>
-                    <a class="collapse-item" href="">Notification</a>
-                    <a class="collapse-item" href="">Email</a>
+                    <a class="collapse-item" href="notification.php">Notification</a>
+                    <a class="collapse-item" href="email.php">Email</a>
                     <a class="collapse-item" href="">contact</a>
                 </div>
             </div>
