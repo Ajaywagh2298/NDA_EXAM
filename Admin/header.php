@@ -93,7 +93,7 @@
                         </a>
                     </li>
                     <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link">
+                        <a href="exam_notice.php" class="nav-link">
                             <i class="nav-icon fas fa-paste"></i>
                             <p>
                                 Exam Notification
@@ -109,7 +109,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="exam_sch.php" class="nav-link">
                             <i class="nav-icon far fa-calendar-plus"></i>
                             <p>
                                 Exam Scheduler
