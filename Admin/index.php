@@ -6,7 +6,7 @@
                         <div class="card card-primary">
                             <div class="card-header">
                                 <div class="card-title">
-                                    User Login
+                                    DASHBOARD
                                 </div>
                             </div>
                             <div class="card-body" style="background:white;">

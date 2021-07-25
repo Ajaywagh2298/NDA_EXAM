@@ -77,50 +77,74 @@
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
                     <li class="nav-item has-treeview menu-open">
-                        <a href="#" class="nav-link active">
-                            <i class="nav-icon fas fa-user"></i>
+                        <a href="index.php" class="nav-link">
+                            <i class="nav-icon fas fa-igloo"></i>
                             <p>
-                                User Login
+                                Home
                             </p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="User\registration.jsp" class="nav-link">
-                            <i class="nav-icon fas fa-user-check"></i>
+                        <a href="officer_notification.php" class="nav-link">
+                            <i class="nav-icon far fa-bell"></i>
                             <p>
-                                User Registration
+                                Notification for Officer
                             </p>
                         </a>
                     </li>
                     <li class="nav-item has-treeview">
                         <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-user-friends"></i>
+                            <i class="nav-icon fas fa-paste"></i>
                             <p>
-                                Volenteer Login
+                                Exam Notification
                             </p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="Volenteer/Registration.jsp" class="nav-link">
-                            <i class="nav-icon fas fa-user"></i>
+                        <a href="" class="nav-link">
+                            <i class="nav-icon fas fa-user-tie"></i>
                             <p>
-                                Volenteer Registration
+                                Officer Registration
                             </p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="Admin/login.jsp" class="nav-link">
-                            <i class="nav-icon fas fa-user-edit"> </i>
+                        <a href="" class="nav-link">
+                            <i class="nav-icon far fa-calendar-plus"></i>
                             <p>
-                                Admin Login
+                                Exam Scheduler
                             </p>
                         </a>
                     </li>
                     <li class="nav-item has-treeview">
-                        <a href="User/about.jsp" class="nav-link">
-                            <i class="nav-icon fas fa-info-circle"></i>
+                        <a href="" class="nav-link">
+                            <i class="nav-icon fas fa-mail-bulk"></i>
                             <p>
-                                About
+                              Email
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item has-treeview">
+                        <a href="" class="nav-link">
+                            <i class="nav-icon fas fa-question"></i>
+                            <p>
+                                Officer Side Query
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item has-treeview">
+                        <a href="" class="nav-link">
+                            <i class="nav-icon fas fa-chart-line"></i>
+                            <p>
+                                Chart
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item has-treeview">
+                        <a href="" class="nav-link">
+                            <i class="nav-icon fas fa-sign-out-alt"></i>
+                            <p>
+                                Logout
                             </p>
                         </a>
                     </li>
