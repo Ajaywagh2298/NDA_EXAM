@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 03, 2021 at 01:20 PM
+-- Generation Time: Aug 03, 2021 at 07:49 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.7
 
@@ -20,6 +20,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `nda_db`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `candidatemarks_1`
+--
+
+CREATE TABLE `candidatemarks_1` (
+  `Chest_No` int(11) NOT NULL,
+  `OfficerID` int(11) NOT NULL,
+  `PPTest` int(11) NOT NULL,
+  `PPDTest` int(11) NOT NULL,
+  `Total` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -802,6 +816,55 @@ INSERT INTO `district` (`DistCode`, `StCode`, `DistrictName`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `documents_t`
+--
+
+CREATE TABLE `documents_t` (
+  `Reg_No` varchar(70) NOT NULL,
+  `Chest_No` varchar(70) NOT NULL,
+  `Status` varchar(30) NOT NULL,
+  `grievance` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `documents_t`
+--
+
+INSERT INTO `documents_t` (`Reg_No`, `Chest_No`, `Status`, `grievance`) VALUES
+('', 'S0001', 'approval', ''),
+('NDA20210201', 'S0001', 'accept', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `officer`
+--
+
+CREATE TABLE `officer` (
+  `ID` int(11) NOT NULL,
+  `Per_Number` varchar(200) NOT NULL,
+  `Rank` varchar(15) NOT NULL,
+  `Name` varchar(20) NOT NULL,
+  `Mob_No` varchar(10) NOT NULL,
+  `Email` varchar(25) NOT NULL,
+  `Password` varchar(200) NOT NULL,
+  `Field` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `officer`
+--
+
+INSERT INTO `officer` (`ID`, `Per_Number`, `Rank`, `Name`, `Mob_No`, `Email`, `Password`, `Field`) VALUES
+(1, 'SR0001', 'Class I', 'Ajay Rajendra Wagh', '8605473682', 'ajay@gmail.com', 'ajay', 'External'),
+(2, 'Ajay Wagh', '02021998', 'Class 1', '8605473682', 'ajaywagh@gmail.com', 'ajay', ''),
+(3, 'kiran Bari ', '2992398', 'Class 2', '48739384', 'kiran@gmail.com', 'kiran', 'office'),
+(4, '82882828', 'JRE', 'Gouri Pawar', '989988329', 'Gouri@gmail.com', 'gouri', 'office'),
+(5, 'D03333', 'CLass One', 'Ajay Wagh', '3490349340', 'Ajay@gmail.com', '1234', 'office ');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `state`
 --
 
@@ -857,6 +920,12 @@ INSERT INTO `state` (`StCode`, `StateName`) VALUES
 --
 
 --
+-- Indexes for table `candidatemarks_1`
+--
+ALTER TABLE `candidatemarks_1`
+  ADD PRIMARY KEY (`Chest_No`);
+
+--
 -- Indexes for table `candidate_t`
 --
 ALTER TABLE `candidate_t`
@@ -881,6 +950,19 @@ ALTER TABLE `candidate_t2`
 ALTER TABLE `district`
   ADD PRIMARY KEY (`DistCode`),
   ADD KEY `StCode` (`StCode`);
+
+--
+-- Indexes for table `documents_t`
+--
+ALTER TABLE `documents_t`
+  ADD PRIMARY KEY (`Reg_No`,`Chest_No`);
+
+--
+-- Indexes for table `officer`
+--
+ALTER TABLE `officer`
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `Per_Number` (`Per_Number`);
 
 --
 -- Indexes for table `state`
@@ -909,6 +991,12 @@ ALTER TABLE `candidate_t2`
 --
 ALTER TABLE `district`
   MODIFY `DistCode` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=651;
+
+--
+-- AUTO_INCREMENT for table `officer`
+--
+ALTER TABLE `officer`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `state`
