@@ -23,7 +23,7 @@
                     <div class="card-header">
                         <div class="card-title">
                             <i class="fas fa-angle-double-right"></i>&nbsp;
-                            Exam Notification
+                            Exam scheduler
                         </div>
                     </div><br>
                     <div class="card-body" style="background:white;">
