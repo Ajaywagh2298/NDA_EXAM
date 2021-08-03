@@ -106,7 +106,7 @@
                     <div class="display box card-body" style="background:white;">
                         <div class="card card-success" style="background:white;">
                             <div class="col-md-12">
-                                <div class="bottom-section"style="padding: 10px;">
+                                <div class="bottom-section" style="padding: 10px;">
                                     <div class="card">
                                         <div class="card-header">
                                             <h3 class="card-title">List Notification</h3>
