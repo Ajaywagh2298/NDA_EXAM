@@ -1,3 +1,4 @@
+<?php include "../connection.php"; ?>
 <?php include "header.php"; ?>
 <section class="content">
     <div class="container-fluid">
@@ -72,7 +73,7 @@ if ( isset( $_POST[ "submit" ] ) ) {
 
     <script type="text/javascript">
         alert( "Registered successfully!" );
-        window.location = "registration.php";
+        window.location = "officer_registration.php";
     </script>
 
     <?php
