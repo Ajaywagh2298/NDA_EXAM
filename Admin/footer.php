@@ -25,4 +25,3 @@
 <script src="dist/js/adminlte.js"></script>
 
 <!-- OPTIONAL SCRIPTS -->
-<?php include "session.php"; ?>

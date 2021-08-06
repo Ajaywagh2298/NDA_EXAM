@@ -16,7 +16,7 @@
                                 <div class="bottom-section" style="padding: 10px;">
                                     <form action="" method="post">
                                         <div class="input-group mb-3">
-                                            <input type="text" class="form-control" placeholder="Person Permanent ID">
+                                            <input type="text" class="form-control" placeholder="Person Permanent ID" name="Per_id">
                                             <div class="input-group-append">
                                                 <div class="input-group-text">
                                                     <span class="fas fa-id-card"></span>
@@ -24,7 +24,7 @@
                                             </div>
                                         </div>
                                         <div class="input-group mb-3">
-                                            <input type="text" class="form-control" placeholder="Full name">
+                                            <input type="text" class="form-control" placeholder="Full name" name="name">
                                             <div class="input-group-append">
                                                 <div class="input-group-text">
                                                     <span class="fas fa-user"></span>
@@ -32,7 +32,7 @@
                                             </div>
                                         </div>
                                         <div class="input-group mb-3">
-                                            <input type="text" class="form-control" placeholder="Role of Person">
+                                            <input type="text" class="form-control" placeholder="Role of Person" name="role">
                                             <div class="input-group-append">
                                                 <div class="input-group-text">
                                                     <span class="fas fa-plus-square"></span>
@@ -40,7 +40,7 @@
                                             </div>
                                         </div>
                                         <div class="input-group mb-3">
-                                            <input type="text" class="form-control" placeholder="appointed Officer name">
+                                            <input type="text" class="form-control" placeholder="appointed Officer name" name="officer">
                                             <div class="input-group-append">
                                                 <div class="input-group-text">
                                                     <span class="fas fa-user-check"></span>
@@ -48,7 +48,7 @@
                                             </div>
                                         </div>
                                         <div class="input-group mb-3">
-                                            <input type="email" class="form-control" placeholder="Email">
+                                            <input type="email" class="form-control" placeholder="Email" name="email">
                                             <div class="input-group-append">
                                                 <div class="input-group-text">
                                                     <span class="fas fa-envelope"></span>
@@ -56,7 +56,7 @@
                                             </div>
                                         </div>
                                         <div class="input-group mb-3">
-                                            <input type="password" class="form-control" placeholder="Password">
+                                            <input type="password" class="form-control" placeholder="Password" name="password">
                                             <div class="input-group-append">
                                                 <div class="input-group-text">
                                                     <span class="fas fa-lock"></span>
@@ -64,7 +64,7 @@
                                             </div>
                                         </div>
                                         <div class="input-group mb-3">
-                                            <input type="password" class="form-control" placeholder="Retype password">
+                                            <input type="password" class="form-control" placeholder="Retype password" name="c_password">
                                             <div class="input-group-append">
                                                 <div class="input-group-text">
                                                     <span class="fas fa-lock"></span>
@@ -82,7 +82,7 @@
                                             </div>
                                             <!-- /.col -->
                                             <div class="col-4">
-                                                <button type="submit" class="btn btn-primary btn-block">Register</button>
+                                                <button type="submit" class="btn btn-primary btn-block" name="submit">Register</button>
                                             </div>
                                             <!-- /.col -->
                                         </div>
@@ -95,4 +95,18 @@
             </div>
         </div>
 </section>
+<?php
+if ( isset( $_POST[ "submit" ] ) ) {
+    mysqli_query($conn, "INSERT INTO `admin`  VALUES (NULL,'$_POST[Per_id]','$_POST[name]','$_POST[role]','$_POST[officer]','$_POST[email]','$_POST[password]','$_POST[c_password]')") or die(mysqli_error($conn));
+
+    ?>
+
+    <script type="text/javascript">
+        alert( "Registered successfully!" );
+        window.location = "admin_registration.php";
+    </script>
+
+    <?php
+}
+?>
 <?php include "footer.php"; ?>
