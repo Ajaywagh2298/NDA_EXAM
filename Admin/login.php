@@ -1,4 +1,5 @@
-
+<?php include "../connection.php"; ?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +30,7 @@
 
            <form action="" method="post">
                 <div class="input-group mb-3">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control" placeholder="Email" name="email">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-envelope"></span>
@@ -37,7 +38,7 @@
                     </div>
                 </div>
                 <div class="input-group mb-3">
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control" placeholder="Password" name="pwd">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-lock"></span>
@@ -47,7 +48,7 @@
                 <div class="row">
                                         <!-- /.col -->
                     <div class="col-4 text-center">
-                        <button type="submit" class="btn btn-primary " style="width: 110px;">Login</button>
+                        <button type="submit" class="btn btn-primary " style="width: 110px;" name="submit">Login</button>
                     </div>
                     <!-- /.col -->
                 </div>
@@ -83,6 +84,31 @@
                 </div>
             </div>
         </div></div>
+    <?php
+    if(isset($_POST["submit"])){
+        $count=0;
+        $res= mysqli_query($conn,"select * from admin where email ='$_POST[email]' && password ='$_POST[pwd]'");
+        $count=mysqli_num_rows($res);
+
+        if($count==0)
+        {
+            ?>
+            <script type="text/javascript">
+                window.location.href=window.location.href;
+            </script>
+        <?php
+        }
+        else
+        {
+        $_SESSION['email'] = $_POST['email'];
+        ?>
+            <script type="text/javascript">
+                window.location.href="index.php";
+            </script>
+            <?php
+        }
+    }
+    ?>
 <!-- /.login-box -->
 
 <!-- jQuery -->

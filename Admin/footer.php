@@ -3,7 +3,7 @@
         <div class="pic">
             <img src="img/man.png" alt="">
         </div>
-        <div class="text-center" style="font-size: 20px;color: white;">Ajay Rajendra Wagh</div>
+        <div class="text-center" style="font-size: 20px;color: white;"><?php $rows[name]; ?></div>
     </div>
 </aside>
 <!-- /.control-sidebar -->
@@ -25,3 +25,4 @@
 <script src="dist/js/adminlte.js"></script>
 
 <!-- OPTIONAL SCRIPTS -->
+<?php include "session.php"; ?>

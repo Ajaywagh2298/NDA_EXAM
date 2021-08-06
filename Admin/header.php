@@ -1,3 +1,5 @@
+<?php include "session.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -160,6 +162,14 @@
                             <i class="nav-icon fas fa-chart-line"></i>
                             <p>
                                 Chart
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item has-treeview">
+                        <a href="admin_registration.php" class="nav-link">
+                            <i class="fas fa-user-plus"></i>
+                            <p>
+                                New Admin Registration
                             </p>
                         </a>
                     </li>
