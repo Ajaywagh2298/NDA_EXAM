@@ -3,7 +3,7 @@
         <div class="pic">
             <img src="img/man.png" alt="">
         </div>
-        <div class="text-center" style="font-size: 20px;color: white;"><?php $rows[name]; ?></div>
+        <div class="text-center" style="font-size: 20px;color: white;"></div>
     </div>
 </aside>
 <!-- /.control-sidebar -->
