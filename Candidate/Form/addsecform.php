@@ -30,7 +30,7 @@ if ( isset( $_POST[ "submit" ] ) ) {
 
     ?>
     <script type="text/javascript">
-        alert( "Form Uploaded successfully!" );
+        alert( "Form Uploaded successfully!!" );
         window.location = "../../index.php";
     </script>
     <?php
