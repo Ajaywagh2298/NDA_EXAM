@@ -45,15 +45,15 @@
                                     <form action="" method="post" style="padding-left: 20px;">
                                         <div class="form-group">
                                             <label style="padding: 10px;font-size: 20px;">Exam Name </label>
-                                            <input type="text" class="form-control" name="name">
+                                            <input type="text" class="form-control" name="e_name">
                                         </div>
                                         <div class="form-group">
                                             <label style="padding: 10px;font-size: 20px;">Qualification Require</label>
-                                            <input type="text" class="form-control" name="eql">
+                                            <input type="text" class="form-control" name="qualification">
                                         </div>
                                         <div class="form-group">
                                             <label style="padding: 10px;font-size: 20px;">Information About Exam Conduct</label>
-                                            <textarea class="form-control" name="" style="width: 100%;height: 200px;">Enter the all information related to the exam like, 1. which type student can apply 2. Vacancy and other.</textarea>
+                                            <textarea class="form-control" name="message" style="width: 100%;height: 200px;">Enter the all information related to the exam like, 1. which type student can apply 2. Vacancy and other.</textarea>
                                         </div>
 
                                         <br>
@@ -71,6 +71,20 @@
             </div>
         </div>
 </section>
+<?php
+if ( isset( $_POST[ "submit" ] ) ) {
+    mysqli_query($conn, "INSERT INTO `exam_t` VALUES (NULL ,'$_POST[e_name]','$_POST[qualification]','$_POST[message]')") or die(mysqli_error($conn));
+
+    ?>
+
+    <script type="text/javascript">
+        alert( "Registered successfully!" );
+        window.location = "exam_notice.php";
+    </script>
+
+    <?php
+}
+?>
 <script>
     $(function () {
         $("#example1").DataTable();
