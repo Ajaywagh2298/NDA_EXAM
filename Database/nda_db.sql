@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 03, 2021 at 07:49 PM
+-- Generation Time: Aug 07, 2021 at 10:07 AM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.7
 
@@ -20,6 +20,32 @@ SET time_zone = "+00:00";
 --
 -- Database: `nda_db`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `a_id` int(20) NOT NULL,
+  `per_id` varchar(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `role` varchar(100) NOT NULL,
+  `officer` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `c_password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`a_id`, `per_id`, `name`, `role`, `officer`, `email`, `password`, `c_password`) VALUES
+(1, 'W27349', 'Ajay Wagh', 'Admin Exam', 'Kiran Bari', 'ajay@gmail.com', 'ajay', 'ajay'),
+(2, '', 'Ajay Rajendra Wagh', 'Exam Time Mang', 'Gouri Pawar', 'ajay22@gmail.com', 'ajay', 'ajay'),
+(4, 'WE300209', 'Kiran Bari', 'Admin', 'Ajay Wagh', 'kiran@vit.edu', 'kiran', 'kiran');
 
 -- --------------------------------------------------------
 
@@ -837,6 +863,49 @@ INSERT INTO `documents_t` (`Reg_No`, `Chest_No`, `Status`, `grievance`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `exam_sch`
+--
+
+CREATE TABLE `exam_sch` (
+  `e_id` int(20) NOT NULL,
+  `exam_id` int(20) DEFAULT NULL,
+  `e_name` varchar(100) DEFAULT NULL,
+  `qualification` varchar(100) NOT NULL,
+  `s_exam_app` varchar(100) NOT NULL,
+  `e_exam_app` varchar(100) NOT NULL,
+  `s_exam_app_edit` varchar(100) NOT NULL,
+  `e_exam_app_edit` varchar(100) NOT NULL,
+  `s_exam` varchar(100) NOT NULL,
+  `e_exam` varchar(100) NOT NULL,
+  `w_reuslt_date` varchar(100) NOT NULL,
+  `other_act_s_date` varchar(100) NOT NULL,
+  `other_act_e_date` varchar(100) NOT NULL,
+  `final_result` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `exam_t`
+--
+
+CREATE TABLE `exam_t` (
+  `exam_id` int(20) NOT NULL,
+  `e_name` varchar(200) NOT NULL,
+  `qualification` varchar(200) NOT NULL,
+  `message` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `exam_t`
+--
+
+INSERT INTO `exam_t` (`exam_id`, `e_name`, `qualification`, `message`) VALUES
+(1, 'NDA', '12 PCM', 'Enter the all information related to the exam like, 1. which type student can apply 2. Vacancy and other.');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `officer`
 --
 
@@ -920,6 +989,13 @@ INSERT INTO `state` (`StCode`, `StateName`) VALUES
 --
 
 --
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`a_id`),
+  ADD UNIQUE KEY `per_id` (`per_id`);
+
+--
 -- Indexes for table `candidatemarks_1`
 --
 ALTER TABLE `candidatemarks_1`
@@ -958,6 +1034,18 @@ ALTER TABLE `documents_t`
   ADD PRIMARY KEY (`Reg_No`,`Chest_No`);
 
 --
+-- Indexes for table `exam_sch`
+--
+ALTER TABLE `exam_sch`
+  ADD PRIMARY KEY (`e_id`);
+
+--
+-- Indexes for table `exam_t`
+--
+ALTER TABLE `exam_t`
+  ADD PRIMARY KEY (`exam_id`);
+
+--
 -- Indexes for table `officer`
 --
 ALTER TABLE `officer`
@@ -973,6 +1061,12 @@ ALTER TABLE `state`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `a_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `candidate_t1`
@@ -991,6 +1085,18 @@ ALTER TABLE `candidate_t2`
 --
 ALTER TABLE `district`
   MODIFY `DistCode` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=651;
+
+--
+-- AUTO_INCREMENT for table `exam_sch`
+--
+ALTER TABLE `exam_sch`
+  MODIFY `e_id` int(20) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `exam_t`
+--
+ALTER TABLE `exam_t`
+  MODIFY `exam_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `officer`
